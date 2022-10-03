@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ES_For_Auditorium
+namespace ES_For_Auditorium.User_dashbord
 {
-    public partial class Form1 : Form
+    public partial class User_dashbord : Form
     {
-        public Form1()
+        public User_dashbord()
         {
             InitializeComponent();
         }

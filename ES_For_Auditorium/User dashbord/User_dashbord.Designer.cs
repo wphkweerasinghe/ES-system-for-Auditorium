@@ -1,6 +1,6 @@
-﻿namespace ES_For_Auditorium
+﻿namespace ES_For_Auditorium.User_dashbord
 {
-    partial class Form1
+    partial class User_dashbord
     {
         /// <summary>
         /// Required designer variable.
@@ -31,10 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Text = "User_dashbord";
         }
 
         #endregion
     }
 }
-
