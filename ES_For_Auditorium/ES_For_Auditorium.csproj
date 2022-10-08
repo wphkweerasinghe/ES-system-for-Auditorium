@@ -46,10 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin dashbord\Admin_dashbord.cs">
+    <Compile Include="Admin_dashbord\Admin_dashbord.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin dashbord\Admin_dashbord.Designer.cs">
+    <Compile Include="Admin_dashbord\Admin_dashbord.Designer.cs">
       <DependentUpon>Admin_dashbord.cs</DependentUpon>
     </Compile>
     <Compile Include="Login\Form_login.cs">
@@ -60,10 +60,34 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="User dashbord\User_dashbord.cs">
+    <Compile Include="User_dashbord\EventCalender.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User dashbord\User_dashbord.Designer.cs">
+    <Compile Include="User_dashbord\EventCalender.Designer.cs">
+      <DependentUpon>EventCalender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_dashbord\MyProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_dashbord\MyProfile.Designer.cs">
+      <DependentUpon>MyProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_dashbord\MyReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_dashbord\MyReservation.Designer.cs">
+      <DependentUpon>MyReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_dashbord\RequestAuditorium.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_dashbord\RequestAuditorium.Designer.cs">
+      <DependentUpon>RequestAuditorium.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_dashbord\User_dashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_dashbord\User_dashbord.Designer.cs">
       <DependentUpon>User_dashbord.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -75,7 +99,19 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="User dashbord\User_dashbord.resx">
+    <EmbeddedResource Include="User_dashbord\EventCalender.resx">
+      <DependentUpon>EventCalender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_dashbord\MyProfile.resx">
+      <DependentUpon>MyProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_dashbord\MyReservation.resx">
+      <DependentUpon>MyReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_dashbord\RequestAuditorium.resx">
+      <DependentUpon>RequestAuditorium.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_dashbord\User_dashbord.resx">
       <DependentUpon>User_dashbord.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

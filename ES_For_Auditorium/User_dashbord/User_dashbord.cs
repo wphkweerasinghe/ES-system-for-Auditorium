@@ -36,35 +36,9 @@ namespace ES_For_Auditorium.User_dashbord
                 }
             }
         }
-
-        private void btnEventCalender_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-        }
-
-        private void btnReservation_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-        }
-
-        private void btnRequestAudi_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-        }
-
-        private void btnProfile_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void OpenChildForm(Form childForm, object btnSender)
         {
-            if(activeForm != null)
+            if (activeForm != null)
             { activeForm.Close(); }
             ActivateButton(btnSender);
             activeForm = childForm;
@@ -77,5 +51,32 @@ namespace ES_For_Auditorium.User_dashbord
             childForm.Show();
             lblTitle.Text = childForm.Text;
         }
+
+        private void btnEventCalender_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new EventCalender(), sender);
+        }
+
+        private void btnReservation_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new MyReservation(), sender);
+        }
+
+        private void btnRequestAudi_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new RequestAuditorium(), sender);
+        }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new MyProfile(), sender);
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+
     }
 }
