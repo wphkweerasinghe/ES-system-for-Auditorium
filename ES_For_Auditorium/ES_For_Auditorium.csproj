@@ -46,11 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin_dashbord\AcceptedRequests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_dashbord\AcceptedRequests.Designer.cs">
+      <DependentUpon>AcceptedRequests.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin_dashbord\Admin_dashbord.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin_dashbord\Admin_dashbord.Designer.cs">
       <DependentUpon>Admin_dashbord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_dashbord\EventCalender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_dashbord\EventCalender.Designer.cs">
+      <DependentUpon>EventCalender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_dashbord\MyProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_dashbord\MyProfile.Designer.cs">
+      <DependentUpon>MyProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_dashbord\RequestsForBookingAuditorium.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_dashbord\RequestsForBookingAuditorium.Designer.cs">
+      <DependentUpon>RequestsForBookingAuditorium.cs</DependentUpon>
     </Compile>
     <Compile Include="Login\Form_login.cs">
       <SubType>Form</SubType>
@@ -90,6 +114,21 @@
     <Compile Include="User_dashbord\User_dashbord.Designer.cs">
       <DependentUpon>User_dashbord.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin_dashbord\AcceptedRequests.resx">
+      <DependentUpon>AcceptedRequests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_dashbord\Admin_dashbord.resx">
+      <DependentUpon>Admin_dashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_dashbord\EventCalender.resx">
+      <DependentUpon>EventCalender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_dashbord\MyProfile.resx">
+      <DependentUpon>MyProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_dashbord\RequestsForBookingAuditorium.resx">
+      <DependentUpon>RequestsForBookingAuditorium.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
