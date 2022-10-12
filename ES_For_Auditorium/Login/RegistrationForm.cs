@@ -46,12 +46,12 @@ namespace ES_For_Auditorium.Login
                 MessageBox.Show("Please enter your Name");
                 txtName.Focus();
             }
-            if (email == null || !email.ToLower().Contains('@'))
+            else if (email == null || !email.ToLower().Contains('@'))
             {
                 MessageBox.Show("Please enter vaild Email");
                 txtEmail.Focus();
             }
-            if (stuId == null)
+            else if (stuId == null)
             {
                 MessageBox.Show("Please enter your Student ID");
                 txtStudentId.Focus();
@@ -65,12 +65,12 @@ namespace ES_For_Auditorium.Login
                     txtStudentId.Focus();
                 }
             }
-            if (username == null)
+            else if (username == null)
             {
                 MessageBox.Show("Please enter your Username");
                 txtUsername.Focus();
             }
-            if (createPass == null)
+            else if (createPass == null)
             {
                 MessageBox.Show("Please enter your Password ");
                 txtCreatePass.Focus();
@@ -80,34 +80,36 @@ namespace ES_For_Auditorium.Login
                     txtConfirmPass.Focus();
                 }
             }
-            if (role == null)
+            else if (role == null)
             {
                 MessageBox.Show("Please select your Role");
             }
+            else
+            {
+                //Insert data into database
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='D:\Lectuers\2nd year\2nd semester\ES\Final assigement\AuditoriumReservationDB.mdf';Integrated Security=True;Connect Timeout=30");
+                string query = "INSERT INTO users (name,email,student_id,username,password,role) VALUES('" + name + "','" + email + "','" + studentId + "','" + username + "','" + confirmPass + "','" + role + "' );";
+                SqlCommand cmd = new SqlCommand(query, con);
 
-            //Insert data into database
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='D:\Lectuers\2nd year\2nd semester\ES\Final assigement\AuditoriumReservationDB.mdf';Integrated Security=True;Connect Timeout=30");
-            string query = "INSERT INTO users (name,email,student_id,username,password,role) VALUES('" + name + "','" + email + "','" + studentId + "','" + username + "','" + confirmPass + "','" + role + "' );";
-            SqlCommand cmd = new SqlCommand(query, con);
-
-            try
-            {
-                con.Open();
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("You are succesfully Registered !!!");
+                try
+                {
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("You are succesfully Registered !!!");
+                }
+                catch (SqlException msg)
+                {
+                    MessageBox.Show("Error!!!\n Please Try agian later");
+                    Console.WriteLine(msg.Message);
+                }
+                finally
+                {
+                    con.Close();
+                }
+                Form_login frm = new Form_login();
+                frm.Show();
+                this.Close();
             }
-            catch(SqlException msg)
-            {
-                MessageBox.Show("Error!!!\n Please Try agian later");
-                Console.WriteLine(msg.Message);
-            }
-            finally
-            {
-                con.Close();
-            }
-            Form_login frm = new Form_login();
-            frm.Show();
-            this.Close();
         }
     }
 }
