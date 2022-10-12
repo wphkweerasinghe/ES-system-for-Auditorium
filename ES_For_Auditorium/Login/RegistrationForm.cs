@@ -51,20 +51,6 @@ namespace ES_For_Auditorium.Login
                 MessageBox.Show("Please enter vaild Email");
                 txtEmail.Focus();
             }
-            else if (stuId == null)
-            {
-                MessageBox.Show("Please enter your Student ID");
-                txtStudentId.Focus();
-                try
-                {
-                    studentId = Convert.ToInt32(stuId);
-                }
-                catch (Exception msg)
-                {
-                    MessageBox.Show(msg.Message);
-                    txtStudentId.Focus();
-                }
-            }
             else if (username == null)
             {
                 MessageBox.Show("Please enter your Username");
@@ -83,6 +69,20 @@ namespace ES_For_Auditorium.Login
             else if (role == null)
             {
                 MessageBox.Show("Please select your Role");
+            }
+            else if (role == "student" && stuId == null)
+            {
+                MessageBox.Show("Please enter your Student ID");
+                txtStudentId.Focus();
+                try
+                {
+                    studentId = Convert.ToInt32(stuId);
+                }
+                catch (Exception msg)
+                {
+                    MessageBox.Show(msg.Message);
+                    txtStudentId.Focus();
+                }
             }
             else
             {
@@ -106,10 +106,12 @@ namespace ES_For_Auditorium.Login
                 {
                     con.Close();
                 }
+                //Redirect to Login Form
                 Form_login frm = new Form_login();
                 frm.Show();
                 this.Close();
             }
+
         }
     }
 }

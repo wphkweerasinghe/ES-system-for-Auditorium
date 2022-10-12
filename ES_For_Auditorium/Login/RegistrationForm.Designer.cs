@@ -94,9 +94,9 @@
             this.lblStudentId.AutoSize = true;
             this.lblStudentId.Location = new System.Drawing.Point(34, 170);
             this.lblStudentId.Name = "lblStudentId";
-            this.lblStudentId.Size = new System.Drawing.Size(76, 16);
+            this.lblStudentId.Size = new System.Drawing.Size(68, 16);
             this.lblStudentId.TabIndex = 4;
-            this.lblStudentId.Text = "Student ID *";
+            this.lblStudentId.Text = "Student ID";
             // 
             // txtUsername
             // 
