@@ -16,7 +16,7 @@ namespace ES_For_Auditorium
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login.RegistrationForm());
+            Application.Run(new Login.Form_login());
         }
     }
 }
