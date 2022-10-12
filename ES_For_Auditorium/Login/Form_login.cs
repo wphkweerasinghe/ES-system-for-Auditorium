@@ -16,5 +16,15 @@ namespace ES_For_Auditorium.Login
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form_login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
