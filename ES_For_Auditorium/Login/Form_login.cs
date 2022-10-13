@@ -51,6 +51,7 @@ namespace ES_For_Auditorium.Login
                     Console.WriteLine(role);
                     switch (role)
                     {
+                        //student role
                         case "Student":
                             {
                                 User_dashbord.User_dashbord form = new User_dashbord.User_dashbord();
@@ -58,10 +59,27 @@ namespace ES_For_Auditorium.Login
                                 this.Hide();
                                 break;
                             }
+                        //student Admin
                         case "Admin":
                             {
                                 Admin_dashbord.Admin_dashbord frm = new Admin_dashbord.Admin_dashbord();
                                 frm.Show();
+                                this.Hide();
+                                break;
+                            }
+                        //student Admin
+                        case "Top Manager":
+                            {
+                                Admin_dashbord.Admin_dashbord frm = new Admin_dashbord.Admin_dashbord();
+                                frm.Show();
+                                this.Hide();
+                                break;
+                            }
+                        //Default pathway
+                        default:
+                            {
+                                User_dashbord.User_dashbord form = new User_dashbord.User_dashbord();
+                                form.Show();
                                 this.Hide();
                                 break;
                             }

@@ -70,13 +70,17 @@ namespace ES_For_Auditorium.Login
             {
                 MessageBox.Show("Please select your Role");
             }
-            else if (role == "student" && stuId == null)
+            else if (stuId == null)
             {
                 MessageBox.Show("Please enter your Student ID");
                 txtStudentId.Focus();
+            }
+            else if (role == "student" && stuId != null)
+            {
                 try
                 {
-                    studentId = Convert.ToInt32(stuId);
+                    //convert string value to int
+                    studentId = int.Parse(stuId);
                 }
                 catch (Exception msg)
                 {
@@ -111,7 +115,6 @@ namespace ES_For_Auditorium.Login
                 frm.Show();
                 this.Close();
             }
-
         }
     }
 }
