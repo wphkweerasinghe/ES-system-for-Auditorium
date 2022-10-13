@@ -46,34 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin_dashbord\AcceptedRequests.cs">
+    <Compile Include="Admin_control\AcceptedRequests.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin_dashbord\AcceptedRequests.Designer.cs">
+    <Compile Include="Admin_control\AcceptedRequests.Designer.cs">
       <DependentUpon>AcceptedRequests.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin_dashbord\Admin_dashbord.cs">
+    <Compile Include="Admin_control\Admin_dashbord.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin_dashbord\Admin_dashbord.Designer.cs">
+    <Compile Include="Admin_control\Admin_dashbord.Designer.cs">
       <DependentUpon>Admin_dashbord.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin_dashbord\EventCalender.cs">
+    <Compile Include="Admin_control\EventCalender.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin_dashbord\EventCalender.Designer.cs">
+    <Compile Include="Admin_control\EventCalender.Designer.cs">
       <DependentUpon>EventCalender.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin_dashbord\MyProfile.cs">
+    <Compile Include="Admin_control\MyProfile_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin_dashbord\MyProfile.Designer.cs">
-      <DependentUpon>MyProfile.cs</DependentUpon>
+    <Compile Include="Admin_control\MyProfile_Admin.Designer.cs">
+      <DependentUpon>MyProfile_Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin_dashbord\RequestsForBookingAuditorium.cs">
+    <Compile Include="Admin_control\RequestsForBookingAuditorium.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin_dashbord\RequestsForBookingAuditorium.Designer.cs">
+    <Compile Include="Admin_control\RequestsForBookingAuditorium.Designer.cs">
       <DependentUpon>RequestsForBookingAuditorium.cs</DependentUpon>
     </Compile>
     <Compile Include="Login\Form_login.cs">
@@ -90,49 +90,49 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="User_dashbord\EventCalender.cs">
+    <Compile Include="Student_control\EventCalender.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User_dashbord\EventCalender.Designer.cs">
+    <Compile Include="Student_control\EventCalender.Designer.cs">
       <DependentUpon>EventCalender.cs</DependentUpon>
     </Compile>
-    <Compile Include="User_dashbord\MyProfile.cs">
+    <Compile Include="Student_control\MyProfile_Student.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User_dashbord\MyProfile.Designer.cs">
-      <DependentUpon>MyProfile.cs</DependentUpon>
+    <Compile Include="Student_control\MyProfile_Student.Designer.cs">
+      <DependentUpon>MyProfile_Student.cs</DependentUpon>
     </Compile>
-    <Compile Include="User_dashbord\MyReservation.cs">
+    <Compile Include="Student_control\MyReservation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User_dashbord\MyReservation.Designer.cs">
+    <Compile Include="Student_control\MyReservation.Designer.cs">
       <DependentUpon>MyReservation.cs</DependentUpon>
     </Compile>
-    <Compile Include="User_dashbord\RequestAuditorium.cs">
+    <Compile Include="Student_control\RequestAuditorium.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User_dashbord\RequestAuditorium.Designer.cs">
+    <Compile Include="Student_control\RequestAuditorium.Designer.cs">
       <DependentUpon>RequestAuditorium.cs</DependentUpon>
     </Compile>
-    <Compile Include="User_dashbord\User_dashbord.cs">
+    <Compile Include="Student_control\User_dashbord.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User_dashbord\User_dashbord.Designer.cs">
+    <Compile Include="Student_control\User_dashbord.Designer.cs">
       <DependentUpon>User_dashbord.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Admin_dashbord\AcceptedRequests.resx">
+    <EmbeddedResource Include="Admin_control\AcceptedRequests.resx">
       <DependentUpon>AcceptedRequests.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin_dashbord\Admin_dashbord.resx">
+    <EmbeddedResource Include="Admin_control\Admin_dashbord.resx">
       <DependentUpon>Admin_dashbord.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin_dashbord\EventCalender.resx">
+    <EmbeddedResource Include="Admin_control\EventCalender.resx">
       <DependentUpon>EventCalender.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin_dashbord\MyProfile.resx">
-      <DependentUpon>MyProfile.cs</DependentUpon>
+    <EmbeddedResource Include="Admin_control\MyProfile_Admin.resx">
+      <DependentUpon>MyProfile_Admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin_dashbord\RequestsForBookingAuditorium.resx">
+    <EmbeddedResource Include="Admin_control\RequestsForBookingAuditorium.resx">
       <DependentUpon>RequestsForBookingAuditorium.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\Form_login.resx">
@@ -150,19 +150,19 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="User_dashbord\EventCalender.resx">
+    <EmbeddedResource Include="Student_control\EventCalender.resx">
       <DependentUpon>EventCalender.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User_dashbord\MyProfile.resx">
-      <DependentUpon>MyProfile.cs</DependentUpon>
+    <EmbeddedResource Include="Student_control\MyProfile_Student.resx">
+      <DependentUpon>MyProfile_Student.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User_dashbord\MyReservation.resx">
+    <EmbeddedResource Include="Student_control\MyReservation.resx">
       <DependentUpon>MyReservation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User_dashbord\RequestAuditorium.resx">
+    <EmbeddedResource Include="Student_control\RequestAuditorium.resx">
       <DependentUpon>RequestAuditorium.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User_dashbord\User_dashbord.resx">
+    <EmbeddedResource Include="Student_control\User_dashbord.resx">
       <DependentUpon>User_dashbord.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

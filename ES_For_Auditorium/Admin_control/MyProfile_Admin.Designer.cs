@@ -1,6 +1,6 @@
 ﻿namespace ES_For_Auditorium.Admin_dashbord
 {
-    partial class MyProfile
+    partial class MyProfile_Admin
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.panel_container = new System.Windows.Forms.Panel();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.ComRole = new System.Windows.Forms.ComboBox();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.lblRole = new System.Windows.Forms.Label();
             this.txtConfirmPass = new System.Windows.Forms.TextBox();
             this.lblConfirmPass = new System.Windows.Forms.Label();
@@ -43,8 +45,6 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
             this.panel_container.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,7 +52,7 @@
             // 
             this.panel_container.Controls.Add(this.btnUpdate);
             this.panel_container.Controls.Add(this.ComRole);
-            this.panel_container.Controls.Add(this.btnClear);
+            this.panel_container.Controls.Add(this.btnLogout);
             this.panel_container.Controls.Add(this.lblRole);
             this.panel_container.Controls.Add(this.txtConfirmPass);
             this.panel_container.Controls.Add(this.lblConfirmPass);
@@ -72,6 +72,17 @@
             this.panel_container.Size = new System.Drawing.Size(845, 513);
             this.panel_container.TabIndex = 3;
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Location = new System.Drawing.Point(592, 402);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(91, 40);
+            this.btnUpdate.TabIndex = 32;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
             // ComRole
             // 
             this.ComRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -85,6 +96,17 @@
             this.ComRole.Name = "ComRole";
             this.ComRole.Size = new System.Drawing.Size(207, 28);
             this.ComRole.TabIndex = 30;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Location = new System.Drawing.Point(262, 402);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(115, 40);
+            this.btnLogout.TabIndex = 31;
+            this.btnLogout.Text = "Log Out";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // lblRole
             // 
@@ -199,33 +221,13 @@
             this.lblName.TabIndex = 17;
             this.lblName.Text = "Name *";
             // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(592, 402);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(91, 40);
-            this.btnUpdate.TabIndex = 32;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            // 
-            // btnClear
-            // 
-            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(262, 402);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(115, 40);
-            this.btnClear.TabIndex = 31;
-            this.btnClear.Text = "Log Out";
-            this.btnClear.UseVisualStyleBackColor = true;
-            // 
-            // MyProfile
+            // MyProfile_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(845, 513);
             this.Controls.Add(this.panel_container);
-            this.Name = "MyProfile";
+            this.Name = "MyProfile_Admin";
             this.Text = "MyProfile";
             this.Load += new System.EventHandler(this.MyProfile_Load);
             this.panel_container.ResumeLayout(false);
@@ -251,6 +253,6 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnLogout;
     }
 }

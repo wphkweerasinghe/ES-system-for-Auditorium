@@ -1,6 +1,6 @@
 ﻿namespace ES_For_Auditorium.User_dashbord
 {
-    partial class MyProfile
+    partial class MyProfile_Student
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.panelContainer = new System.Windows.Forms.Panel();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.ComRole = new System.Windows.Forms.ComboBox();
-            this.btnClear = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.lblRole = new System.Windows.Forms.Label();
             this.txtConfirmPass = new System.Windows.Forms.TextBox();
             this.lblConfirmPass = new System.Windows.Forms.Label();
@@ -52,7 +52,7 @@
             // 
             this.panelContainer.Controls.Add(this.btnUpdate);
             this.panelContainer.Controls.Add(this.ComRole);
-            this.panelContainer.Controls.Add(this.btnClear);
+            this.panelContainer.Controls.Add(this.btnLogout);
             this.panelContainer.Controls.Add(this.lblRole);
             this.panelContainer.Controls.Add(this.txtConfirmPass);
             this.panelContainer.Controls.Add(this.lblConfirmPass);
@@ -82,6 +82,7 @@
             this.btnUpdate.TabIndex = 48;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // ComRole
             // 
@@ -97,15 +98,16 @@
             this.ComRole.Size = new System.Drawing.Size(207, 28);
             this.ComRole.TabIndex = 46;
             // 
-            // btnClear
+            // btnLogout
             // 
-            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(237, 390);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(115, 40);
-            this.btnClear.TabIndex = 47;
-            this.btnClear.Text = "Log Out";
-            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Location = new System.Drawing.Point(237, 390);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(115, 40);
+            this.btnLogout.TabIndex = 47;
+            this.btnLogout.Text = "Log Out";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // lblRole
             // 
@@ -239,7 +241,7 @@
         private System.Windows.Forms.Panel panelContainer;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.ComboBox ComRole;
-        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Label lblRole;
         private System.Windows.Forms.TextBox txtConfirmPass;
         private System.Windows.Forms.Label lblConfirmPass;

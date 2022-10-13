@@ -65,7 +65,7 @@ namespace ES_For_Auditorium.Admin_dashbord
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new MyProfile(), sender);
+            OpenChildForm(new MyProfile_Admin(), sender);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
