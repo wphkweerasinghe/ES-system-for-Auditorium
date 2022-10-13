@@ -58,11 +58,13 @@
             this.panelRequests.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelRequests.Location = new System.Drawing.Point(0, 0);
             this.panelRequests.Name = "panelRequests";
-            this.panelRequests.Size = new System.Drawing.Size(1178, 662);
+            this.panelRequests.Size = new System.Drawing.Size(1193, 673);
             this.panelRequests.TabIndex = 0;
             // 
             // panel1
             // 
+            this.panel1.AutoSize = true;
+            this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel1.Controls.Add(this.txtDate);
             this.panel1.Controls.Add(this.btnReject);
             this.panel1.Controls.Add(this.btnAccept);
@@ -80,8 +82,10 @@
             this.panel1.Controls.Add(this.lblId);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 259);
+            this.panel1.MaximumSize = new System.Drawing.Size(1920, 1080);
+            this.panel1.MinimumSize = new System.Drawing.Size(1366, 768);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1178, 403);
+            this.panel1.Size = new System.Drawing.Size(1366, 768);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -102,6 +106,7 @@
             this.btnReject.TabIndex = 14;
             this.btnReject.Text = "Reject Request";
             this.btnReject.UseVisualStyleBackColor = true;
+            this.btnReject.Click += new System.EventHandler(this.btnReject_Click);
             // 
             // btnAccept
             // 
@@ -240,7 +245,7 @@
             this.dgvEvent.ReadOnly = true;
             this.dgvEvent.RowHeadersWidth = 51;
             this.dgvEvent.RowTemplate.Height = 24;
-            this.dgvEvent.Size = new System.Drawing.Size(1178, 259);
+            this.dgvEvent.Size = new System.Drawing.Size(1193, 259);
             this.dgvEvent.TabIndex = 0;
             this.dgvEvent.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -248,11 +253,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1178, 662);
+            this.ClientSize = new System.Drawing.Size(1193, 673);
             this.Controls.Add(this.panelRequests);
             this.Name = "RequestsForBookingAuditorium";
             this.Text = "RequestsForBookingAuditorium";
             this.panelRequests.ResumeLayout(false);
+            this.panelRequests.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEvent)).EndInit();

@@ -102,8 +102,8 @@ namespace ES_For_Auditorium.Admin_dashbord
                 //DB Connection
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='D:\Lectuers\2nd year\2nd semester\ES\Final assigement\AuditoriumReservationDB.mdf';Integrated Security=True;Connect Timeout=30");
                 //connect database
-                String insert = "UPDATE event SET name = '" + name + "',date = '" + date + "',time = '" + time + "',duration = '" + duration + "',price = '" + price + "' WHERE id = '"+eventId+"' ;";
-                SqlCommand cmd = new SqlCommand(insert, conn);
+                String update = "UPDATE event SET name = '" + name + "', date = '" + date + "', time = '" + time + "', duration = '" + duration + "', price = '" + price + "' WHERE id = '"+eventId+"' ;";
+                SqlCommand cmd = new SqlCommand(update, conn);
                 try
                 {
                     conn.Open();
@@ -119,7 +119,7 @@ namespace ES_For_Auditorium.Admin_dashbord
                 {
                     conn.Close();
                 }
-                ParentForm.Refresh();
+                DataShow();
             }
         }
 
@@ -150,6 +150,32 @@ namespace ES_For_Auditorium.Admin_dashbord
             //Refresh table
             DataShow();
 
+        }
+
+        private void btnReject_Click(object sender, EventArgs e)
+        {
+            int eventId = int.Parse(txtId.Text);
+            //DB Connection
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='D:\Lectuers\2nd year\2nd semester\ES\Final assigement\AuditoriumReservationDB.mdf';Integrated Security=True;Connect Timeout=30");
+            //connect database
+            String delete = "DELETE FROM event WHERE id = '" + eventId + "' ;";
+            SqlCommand cmd = new SqlCommand(delete, conn);
+            try
+            {
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Recorded Delete");
+            }
+            catch(Exception message)
+            {
+                Console.WriteLine(message.Message);
+                MessageBox.Show("System error !!!  \n Please try again later");
+            }
+            finally
+            {
+                conn.Close();
+            }
+            DataShow();
         }
     }
 }
