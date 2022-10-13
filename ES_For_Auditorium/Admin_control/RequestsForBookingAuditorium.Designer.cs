@@ -80,7 +80,6 @@
             this.panel1.Controls.Add(this.lblEname);
             this.panel1.Controls.Add(this.txtId);
             this.panel1.Controls.Add(this.lblId);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 259);
             this.panel1.MaximumSize = new System.Drawing.Size(1920, 1080);
             this.panel1.MinimumSize = new System.Drawing.Size(1366, 768);
@@ -122,11 +121,11 @@
             // btnEdit
             // 
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.Location = new System.Drawing.Point(920, 137);
+            this.btnEdit.Location = new System.Drawing.Point(872, 137);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(166, 39);
+            this.btnEdit.Size = new System.Drawing.Size(214, 39);
             this.btnEdit.TabIndex = 12;
-            this.btnEdit.Text = "Edit Request";
+            this.btnEdit.Text = "Update Request";
             this.btnEdit.UseVisualStyleBackColor = true;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 

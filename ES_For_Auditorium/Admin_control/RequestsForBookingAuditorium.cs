@@ -84,21 +84,21 @@ namespace ES_For_Auditorium.Admin_dashbord
                 MessageBox.Show("Please Enter Duration ");
                 txtDuration.Focus();
             }
-            else if (price != "")
-            {
-                try
-                {
-                    //convert price into float
-                    float tPrice = float.Parse(price);
-                }
-                catch (Exception msg)
-                {
-                    MessageBox.Show("Please enter valid Price");
-                    Console.WriteLine(msg.Message);
-                }
-            }
             else
             {
+                if (price != "")
+                {
+                    try
+                    {
+                        //convert price into float
+                        float tPrice = float.Parse(price);
+                    }
+                    catch (Exception msg)
+                    {
+                        MessageBox.Show("Please enter valid Price");
+                        Console.WriteLine(msg.Message);
+                    }
+                }
                 //DB Connection
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='D:\Lectuers\2nd year\2nd semester\ES\Final assigement\AuditoriumReservationDB.mdf';Integrated Security=True;Connect Timeout=30");
                 //connect database
