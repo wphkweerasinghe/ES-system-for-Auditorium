@@ -69,17 +69,17 @@ namespace ES_For_Auditorium.User_dashbord
                 MessageBox.Show("Please enter your Name");
                 txtName.Focus();
             }
-            else if (email == null || !email.ToLower().Contains('@'))
+            else if (email == "" || !email.ToLower().Contains('@'))
             {
                 MessageBox.Show("Please enter vaild Email");
                 txtEmail.Focus();
             }
-            else if (username == null)
+            else if (username == "")
             {
                 MessageBox.Show("Please enter your Username");
                 txtUsername.Focus();
             }
-            else if (createPass == null)
+            else if (createPass == "")
             {
                 MessageBox.Show("Please enter your Password ");
                 txtCreatePass.Focus();
@@ -89,7 +89,7 @@ namespace ES_For_Auditorium.User_dashbord
                     txtConfirmPass.Focus();
                 }
             }
-            else if (role == null)
+            else if (role == "")
             {
                 MessageBox.Show("Please select your Role");
             }

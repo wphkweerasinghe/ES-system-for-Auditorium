@@ -54,43 +54,41 @@ namespace ES_For_Auditorium.User_dashbord
             String duration = txtDuration.Text;
             String price = txtPrice.Text;
             //validate data 
-            if(eName == null)
+            if(eName == "")
             {
                 MessageBox.Show("Please Enter Name ");
                 txtEventName.Focus();
             }
-            else if (date == null)
+            else if (date == "")
             {
                 MessageBox.Show("Please Enter Date ");
                 dateTimePicker.Focus();
             }
-            else if (time == null)
+            else if (time == "")
             {
                 MessageBox.Show("Please Enter Time ");
                 txtTime.Focus();
             }
-            else if (duration == null)
+            else if (duration == "")
             {
                 MessageBox.Show("Please Enter Duration ");
                 txtDuration.Focus();
             }
-            else if (price == null)
-            {
-                MessageBox.Show("Please Enter Price ");
-                txtPrice.Focus();
-            }
-            else
+            else if (price != "")
             {
                 try
                 {
                     //convert price into float
-                    float tPrice = float.Parse(price); 
+                    float tPrice = float.Parse(price);
                 }
-                catch(Exception msg)
+                catch (Exception msg)
                 {
                     MessageBox.Show("Please enter valid Price");
                     Console.WriteLine(msg.Message);
                 }
+            }
+            else
+            {
                 //connect database
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='D:\Lectuers\2nd year\2nd semester\ES\Final assigement\AuditoriumReservationDB.mdf';Integrated Security=True;Connect Timeout=30");
                 String insert = "INSERT INTO event (name,date,time,duration,price,user_id) VALUES ('" + eName + "','" + date + "','" + time + "','" + duration + "','" + price + "','" + id + "');";
