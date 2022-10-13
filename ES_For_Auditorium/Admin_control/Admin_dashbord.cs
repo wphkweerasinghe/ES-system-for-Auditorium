@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ES_For_Auditorium.Login;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,7 @@ namespace ES_For_Auditorium.Admin_dashbord
         public Admin_dashbord()
         {
             InitializeComponent();
+            lblUsername.Text = Form_login.uname;
         }
         private void ActivateButton(Object btnSender)
         {
@@ -63,12 +65,22 @@ namespace ES_For_Auditorium.Admin_dashbord
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new MyProfile(), sender);
+            OpenChildForm(new MyProfile_Admin(), sender);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void panelContainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblUsername_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

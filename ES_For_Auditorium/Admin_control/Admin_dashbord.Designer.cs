@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.Panel panelTitle;
-            this.panelContainer = new System.Windows.Forms.Panel();
+            this.lblUsername = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.panelContainer = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnProfile = new System.Windows.Forms.Button();
@@ -45,23 +46,31 @@
             this.panelLogo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panelContainer
-            // 
-            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContainer.Location = new System.Drawing.Point(220, 80);
-            this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(580, 370);
-            this.panelContainer.TabIndex = 5;
-            // 
             // panelTitle
             // 
             panelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            panelTitle.Controls.Add(this.lblUsername);
             panelTitle.Controls.Add(this.lblTitle);
             panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
             panelTitle.Location = new System.Drawing.Point(220, 0);
             panelTitle.Name = "panelTitle";
-            panelTitle.Size = new System.Drawing.Size(580, 80);
+            panelTitle.Size = new System.Drawing.Size(833, 80);
             panelTitle.TabIndex = 4;
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.ForeColor = System.Drawing.Color.White;
+            this.lblUsername.Location = new System.Drawing.Point(699, 0);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Padding = new System.Windows.Forms.Padding(10, 20, 0, 0);
+            this.lblUsername.Size = new System.Drawing.Size(134, 49);
+            this.lblUsername.TabIndex = 1;
+            this.lblUsername.Text = "Username";
+            this.lblUsername.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblUsername.Click += new System.EventHandler(this.lblUsername_Click);
             // 
             // lblTitle
             // 
@@ -69,11 +78,20 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(205, 25);
+            this.lblTitle.Location = new System.Drawing.Point(331, 25);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(210, 32);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Event Calender";
+            // 
+            // panelContainer
+            // 
+            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContainer.Location = new System.Drawing.Point(220, 80);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(833, 485);
+            this.panelContainer.TabIndex = 5;
+            this.panelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContainer_Paint);
             // 
             // panelMenu
             // 
@@ -87,7 +105,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 450);
+            this.panelMenu.Size = new System.Drawing.Size(220, 565);
             this.panelMenu.TabIndex = 3;
             // 
             // btnExit
@@ -190,7 +208,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1053, 565);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(panelTitle);
             this.Controls.Add(this.panelMenu);
@@ -217,5 +235,6 @@
         private System.Windows.Forms.Button btnEventCalender;
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblUsername;
     }
 }

@@ -18,6 +18,8 @@ namespace ES_For_Auditorium.Login
         {
             InitializeComponent();
         }
+        public static String id = "";
+        public static String uname = "";
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -31,7 +33,7 @@ namespace ES_For_Auditorium.Login
             SqlCommand cmd = new SqlCommand(selectQ, con);
             SqlDataAdapter DA = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
-            
+            //Check the role
             try
             {
                 con.Open();
@@ -41,11 +43,15 @@ namespace ES_For_Auditorium.Login
                 {
                     DataRow row = dt.Rows[0];
                     MessageBox.Show("Successfully loged in");
-                    //check user role
+                    //get current user role
                     String role = row["role"].ToString();
+                    //create varible to pass dashbord form
+                    id = row["id"].ToString();
+                    uname = username;
                     Console.WriteLine(role);
                     switch (role)
                     {
+                        //student role
                         case "Student":
                             {
                                 User_dashbord.User_dashbord form = new User_dashbord.User_dashbord();
@@ -53,10 +59,27 @@ namespace ES_For_Auditorium.Login
                                 this.Hide();
                                 break;
                             }
+                        //student Admin
                         case "Admin":
                             {
                                 Admin_dashbord.Admin_dashbord frm = new Admin_dashbord.Admin_dashbord();
                                 frm.Show();
+                                this.Hide();
+                                break;
+                            }
+                        //student Admin
+                        case "Top Manager":
+                            {
+                                Admin_dashbord.Admin_dashbord frm = new Admin_dashbord.Admin_dashbord();
+                                frm.Show();
+                                this.Hide();
+                                break;
+                            }
+                        //Default pathway
+                        default:
+                            {
+                                User_dashbord.User_dashbord form = new User_dashbord.User_dashbord();
+                                form.Show();
                                 this.Hide();
                                 break;
                             }
@@ -71,6 +94,7 @@ namespace ES_For_Auditorium.Login
             }catch(SqlException msg)
             {
                 MessageBox.Show("Error!!! \n Please Try agian later");
+                Console.WriteLine(msg.Message);
             }
             finally
             {
