@@ -17,6 +17,7 @@ namespace ES_For_Auditorium.Admin_dashbord
         public MyProfile()
         {
             InitializeComponent();
+            //Show user data
             int id = int.Parse(Form_login.id);
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='D:\Lectuers\2nd year\2nd semester\ES\Final assigement\AuditoriumReservationDB.mdf';Integrated Security=True;Connect Timeout=30");
             SqlCommand cmd = new SqlCommand("SELECT * FROM users WHERE id = '" + id + "';", conn);
