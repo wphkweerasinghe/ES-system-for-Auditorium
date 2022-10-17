@@ -23,6 +23,8 @@ namespace ES_For_Auditorium.Admin_control
         private String _time;
         private String _date;
         private String _price;
+        private Image _icon;
+        private Color _iconBackColor;
 
         public String Title
         {
@@ -46,9 +48,41 @@ namespace ES_For_Auditorium.Admin_control
         {
             get { return _price; }
             set { _price = value; lblEventPrice.Text = value; }
-        } 
+        }
+
+        public Image Icon
+        {
+            get { return _icon; }
+            set { _icon = value; eventPic.Image = value; }
+        }
+        
+        public Color IconBackColor
+        {
+            get { return _iconBackColor; }
+            set { _iconBackColor = value; }
+        }
+
+
         #endregion
 
+        private void EventList_Load(object sender, EventArgs e)
+        {
 
+        }
+
+        private void EventList_MouseEnter(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Silver;
+        }
+
+        private void EventList_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EventList_MouseLeave(object sender, EventArgs e)
+        {
+            this.BackColor = Color.White;
+        }
     }
 }

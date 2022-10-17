@@ -1,4 +1,5 @@
 ﻿using ES_For_Auditorium.Admin_control;
+using ES_For_Auditorium.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,7 +47,6 @@ namespace ES_For_Auditorium.Admin_dashbord
 
             DataTable dt = new DataTable();
             da.Fill(dt);
-
             for(int i = 0; i < dt.Rows.Count; i++)
             {
                 //create object
@@ -56,6 +56,8 @@ namespace ES_For_Auditorium.Admin_dashbord
                 eventList.Time = dt.Rows[i][3].ToString();
                 eventList.Date = dt.Rows[i][2].ToString();
                 eventList.Price = dt.Rows[i][8].ToString();
+                eventList.Icon = Resources.nsbm_logo_favicon;
+                eventList.IconBackColor = Color.Silver;
                 Console.WriteLine("Data");
 
                 flowLayoutPanel1.Controls.Add(eventList);

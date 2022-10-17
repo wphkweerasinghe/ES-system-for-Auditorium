@@ -36,9 +36,10 @@
             this.lblDate = new System.Windows.Forms.Label();
             this.lblEventPrice = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.iconBackPanel = new System.Windows.Forms.Panel();
+            this.panelShadow = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.eventPic)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.iconBackPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // eventPic
@@ -46,6 +47,7 @@
             this.eventPic.Location = new System.Drawing.Point(30, 37);
             this.eventPic.Name = "eventPic";
             this.eventPic.Size = new System.Drawing.Size(100, 100);
+            this.eventPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.eventPic.TabIndex = 0;
             this.eventPic.TabStop = false;
             // 
@@ -118,20 +120,29 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Ticket Price :";
             // 
-            // panel1
+            // iconBackPanel
             // 
-            this.panel1.BackColor = System.Drawing.Color.Teal;
-            this.panel1.Controls.Add(this.eventPic);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(172, 173);
-            this.panel1.TabIndex = 8;
+            this.iconBackPanel.BackColor = System.Drawing.Color.Teal;
+            this.iconBackPanel.Controls.Add(this.panelShadow);
+            this.iconBackPanel.Controls.Add(this.eventPic);
+            this.iconBackPanel.Location = new System.Drawing.Point(0, 0);
+            this.iconBackPanel.Name = "iconBackPanel";
+            this.iconBackPanel.Size = new System.Drawing.Size(172, 173);
+            this.iconBackPanel.TabIndex = 8;
+            // 
+            // panelShadow
+            // 
+            this.panelShadow.BackColor = System.Drawing.Color.Silver;
+            this.panelShadow.Location = new System.Drawing.Point(30, 175);
+            this.panelShadow.Name = "panelShadow";
+            this.panelShadow.Size = new System.Drawing.Size(769, 10);
+            this.panelShadow.TabIndex = 1;
             // 
             // EventList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.iconBackPanel);
             this.Controls.Add(this.lblEventPrice);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblEventDate);
@@ -141,8 +152,12 @@
             this.Controls.Add(this.lblEventTitle);
             this.Name = "EventList";
             this.Size = new System.Drawing.Size(829, 173);
+            this.Load += new System.EventHandler(this.EventList_Load);
+            this.MouseEnter += new System.EventHandler(this.EventList_MouseEnter);
+            this.MouseLeave += new System.EventHandler(this.EventList_MouseLeave);
+            this.MouseHover += new System.EventHandler(this.EventList_MouseHover);
             ((System.ComponentModel.ISupportInitialize)(this.eventPic)).EndInit();
-            this.panel1.ResumeLayout(false);
+            this.iconBackPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,6 +173,7 @@
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblEventPrice;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel iconBackPanel;
+        private System.Windows.Forms.Panel panelShadow;
     }
 }
