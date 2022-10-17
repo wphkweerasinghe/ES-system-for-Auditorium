@@ -28,34 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.dgvReservations = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReservations)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // dgvReservations
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(268, 109);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 32);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "My Reservation";
+            this.dgvReservations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReservations.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvReservations.Location = new System.Drawing.Point(0, 0);
+            this.dgvReservations.Name = "dgvReservations";
+            this.dgvReservations.RowHeadersWidth = 51;
+            this.dgvReservations.RowTemplate.Height = 24;
+            this.dgvReservations.Size = new System.Drawing.Size(800, 450);
+            this.dgvReservations.TabIndex = 0;
             // 
             // MyReservation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dgvReservations);
             this.Name = "MyReservation";
             this.Text = "MyReservation";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReservations)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dgvReservations;
     }
 }
