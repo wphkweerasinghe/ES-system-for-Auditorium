@@ -64,6 +64,12 @@
     <Compile Include="Admin_control\EventCalender.Designer.cs">
       <DependentUpon>EventCalender.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin_control\EventList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_control\EventList.Designer.cs">
+      <DependentUpon>EventList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin_control\MyProfile_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_control\EventCalender.resx">
       <DependentUpon>EventCalender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_control\EventList.resx">
+      <DependentUpon>EventList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_control\MyProfile_Admin.resx">
       <DependentUpon>MyProfile_Admin.cs</DependentUpon>
