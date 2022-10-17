@@ -64,6 +64,12 @@
     <Compile Include="Admin_control\EventCalender.Designer.cs">
       <DependentUpon>EventCalender.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin_control\EventList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_control\EventList.Designer.cs">
+      <DependentUpon>EventList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin_control\MyProfile_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     <EmbeddedResource Include="Admin_control\EventCalender.resx">
       <DependentUpon>EventCalender.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin_control\EventList.resx">
+      <DependentUpon>EventList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin_control\MyProfile_Admin.resx">
       <DependentUpon>MyProfile_Admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +158,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Student_control\EventCalender.resx">
       <DependentUpon>EventCalender.cs</DependentUpon>
@@ -178,6 +188,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\nsbm_logo_favicon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

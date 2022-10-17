@@ -20,3 +20,4 @@ D:\Lectuers\2nd year\2nd semester\ES\Final assigement\ES for auditorium\ES-syste
 D:\Lectuers\2nd year\2nd semester\ES\Final assigement\ES for auditorium\ES-system-for-Auditorium\ES_For_Auditorium\obj\Debug\ES_For_Auditorium.Login.RegistrationForm.resources
 D:\Lectuers\2nd year\2nd semester\ES\Final assigement\ES for auditorium\ES-system-for-Auditorium\ES_For_Auditorium\obj\Debug\ES_For_Auditorium.Admin_dashbord.MyProfile_Admin.resources
 D:\Lectuers\2nd year\2nd semester\ES\Final assigement\ES for auditorium\ES-system-for-Auditorium\ES_For_Auditorium\obj\Debug\ES_For_Auditorium.User_dashbord.MyProfile_Student.resources
+D:\Lectuers\2nd year\2nd semester\ES\Final assigement\ES for auditorium\ES-system-for-Auditorium\ES_For_Auditorium\obj\Debug\ES_For_Auditorium.Admin_control.EventList.resources

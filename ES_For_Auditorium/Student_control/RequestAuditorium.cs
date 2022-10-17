@@ -15,7 +15,7 @@ namespace ES_For_Auditorium.User_dashbord
     public partial class RequestAuditorium : Form
     {
         //get currrent user Id
-        int id = int.Parse(Form_login.id);
+        readonly int id = int.Parse(Form_login.id);
         public RequestAuditorium()
         {
             InitializeComponent();
@@ -54,41 +54,48 @@ namespace ES_For_Auditorium.User_dashbord
             String duration = txtDuration.Text;
             String price = txtPrice.Text;
             //validate data 
-            if(eName == "")
+            if (eName == "" || date == "" || time == "" || duration == "")
             {
-                MessageBox.Show("Please Enter Name ");
-                txtEventName.Focus();
-            }
-            else if (date == "")
-            {
-                MessageBox.Show("Please Enter Date ");
-                dateTimePicker.Focus();
-            }
-            else if (time == "")
-            {
-                MessageBox.Show("Please Enter Time ");
-                txtTime.Focus();
-            }
-            else if (duration == "")
-            {
-                MessageBox.Show("Please Enter Duration ");
-                txtDuration.Focus();
-            }
-            else if (price != "")
-            {
-                try
+                if (eName == "")
                 {
-                    //convert price into float
-                    float tPrice = float.Parse(price);
+                    MessageBox.Show("Please Enter Name ");
+                    txtEventName.Focus();
                 }
-                catch (Exception msg)
+                else if (date == "")
                 {
-                    MessageBox.Show("Please enter valid Price");
-                    Console.WriteLine(msg.Message);
+                    MessageBox.Show("Please Enter Date ");
+                    dateTimePicker.Focus();
+                }
+                else if (time == "")
+                {
+                    MessageBox.Show("Please Enter Time ");
+                    txtTime.Focus();
+                }
+                else if (duration == "")
+                {
+                    MessageBox.Show("Please Enter Duration ");
+                    txtDuration.Focus();
                 }
             }
             else
             {
+                if (price != "")
+                {
+                    Console.WriteLine("price is not null");
+                    try
+                    {
+                        //convert price into float
+                        float tPrice = float.Parse(price);
+                        Console.WriteLine("price converted");
+                    }
+                    catch (Exception msg)
+                    {
+                        MessageBox.Show("Please enter valid Price");
+                        Console.WriteLine(msg.Message);
+                    } 
+                }
+
+                Console.WriteLine("ready to execute SQL");
                 //connect database
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='D:\Lectuers\2nd year\2nd semester\ES\Final assigement\AuditoriumReservationDB.mdf';Integrated Security=True;Connect Timeout=30");
                 String insert = "INSERT INTO event (name,date,time,duration,price,user_id) VALUES ('" + eName + "','" + date + "','" + time + "','" + duration + "','" + price + "','" + id + "');";
@@ -99,7 +106,7 @@ namespace ES_For_Auditorium.User_dashbord
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Request sent");
                 }
-                catch(SqlException massage)
+                catch (SqlException massage)
                 {
                     Console.WriteLine(massage.Message);
                     MessageBox.Show("System Error \n Database not connected");
