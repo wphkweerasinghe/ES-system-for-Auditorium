@@ -37,45 +37,29 @@ namespace ES_For_Auditorium.Admin_dashbord
         //Create function to load events
         private void EventLoad()
         {
-            EventList eventList = new EventList();
-            using (SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\'D:\\Lectuers\\2nd year\\2nd semester\\ES\\Final assigement\\AuditoriumReservationDB.mdf\';Integrated Security=True;Connect Timeout=30"))
-            using (SqlCommand cmd = new SqlCommand("SELECT * FROM event WHERE is_approved_by_admin = 1 AND is_approved_by_MIC = 1 AND is_approved_by_manager = 1;", con))
+            //Clear flowLayoutPanle
+            flowLayoutPanel1.Controls.Clear();
+          
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\'D:\\Lectuers\\2nd year\\2nd semester\\ES\\Final assigement\\AuditoriumReservationDB.mdf\';Integrated Security=True;Connect Timeout=30");
+            SqlCommand cmd = new SqlCommand("SELECT * FROM event WHERE is_approved_by_admin = 1 AND is_approved_by_MIC = 1 AND is_approved_by_manager = 1;", con);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            for(int i = 0; i < dt.Rows.Count; i++)
             {
-                try
-                {
-                    con.Open();
-                    using (SqlDataReader reader = cmd.ExecuteReader())
+                //create object
+                EventList eventList = new EventList();
 
-                        while (reader.HasRows)
-                        {
-                            
-                                while (reader.Read())
-                                {
-                                    eventList.Title = reader["name"].ToString();
-                                    eventList.Time = reader["time"].ToString();
-                                    eventList.Date = reader["date"].ToString();
-                                    eventList.Price = reader["price"].ToString(); 
-                                }
-                            if(flowLayoutPanel1.Controls.Count < 0)
-                            {
-                                flowLayoutPanel1.Controls.Clear();
-                            }
-                            else
-                            {
-                                flowLayoutPanel1.Controls.Add(eventList);
-                            }
-                            reader.NextResult();
-                        }
+                eventList.Title = dt.Rows[i][1].ToString();
+                eventList.Time = dt.Rows[i][3].ToString();
+                eventList.Date = dt.Rows[i][2].ToString();
+                eventList.Price = dt.Rows[i][8].ToString();
+                Console.WriteLine("Data");
 
-                }
-                catch (SqlException msg)
-                {
-                    Console.WriteLine(msg.Message);
-                }
-                finally
-                {
-                    con.Close();
-                }
+                flowLayoutPanel1.Controls.Add(eventList);
+                Console.WriteLine("add object");
             }
         }
     }

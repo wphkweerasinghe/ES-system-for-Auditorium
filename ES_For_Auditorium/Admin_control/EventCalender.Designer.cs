@@ -39,29 +39,34 @@
             this.panelEventList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEventList.Location = new System.Drawing.Point(0, 0);
             this.panelEventList.Name = "panelEventList";
-            this.panelEventList.Size = new System.Drawing.Size(1102, 622);
+            this.panelEventList.Size = new System.Drawing.Size(1102, 653);
             this.panelEventList.TabIndex = 0;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.AutoSize = true;
+            this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1102, 622);
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(3);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1102, 653);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // EventCalender
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1102, 622);
+            this.ClientSize = new System.Drawing.Size(1102, 653);
             this.Controls.Add(this.panelEventList);
+            this.MinimumSize = new System.Drawing.Size(1120, 700);
             this.Name = "EventCalender";
             this.Text = "EventCalender";
             this.Load += new System.EventHandler(this.EventCalender_Load);
             this.panelEventList.ResumeLayout(false);
+            this.panelEventList.PerformLayout();
             this.ResumeLayout(false);
 
         }
