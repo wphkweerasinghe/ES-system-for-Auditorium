@@ -34,7 +34,7 @@ namespace ES_For_Auditorium.Student_control
             {
                 //connect DB
                 SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\'D:\\Lectuers\\2nd year\\2nd semester\\ES\\Final assigement\\AuditoriumReservationDB.mdf\';Integrated Security=True;Connect Timeout=30");
-                SqlCommand cmd = new SqlCommand("INSERT INTO seat_reservation (event_id, user_id, seat_no) VALUES ('" + event_id + "', '" + user_id + "', '" + seat_no + "');", con);
+                SqlCommand cmd = new SqlCommand("INSERT INTO reservation (event_id, user_id, seat_no) VALUES ('" + event_id + "', '" + user_id + "', '" + seat_no + "');", con);
                 try
                 {
                     con.Open();
