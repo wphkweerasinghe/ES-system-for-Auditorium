@@ -52,6 +52,7 @@ namespace ES_For_Auditorium.Admin_dashbord
                 //create object
                 EventList eventList = new EventList();
 
+                eventList.Id = (string)dt.Rows[i][0];
                 eventList.Title = dt.Rows[i][1].ToString();
                 eventList.Time = dt.Rows[i][3].ToString();
                 eventList.Date = dt.Rows[i][2].ToString();
@@ -61,8 +62,10 @@ namespace ES_For_Auditorium.Admin_dashbord
                 Console.WriteLine("Data");
 
                 flowLayoutPanel1.Controls.Add(eventList);
+                //create click event
                 Console.WriteLine("add object");
             }
         }
+        
     }
 }

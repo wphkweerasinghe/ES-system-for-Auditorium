@@ -32,7 +32,7 @@ namespace ES_For_Auditorium.Admin_dashbord
                 }
             }
         }
-        private void OpenChildForm(Form childForm, object btnSender)
+        public void OpenChildForm(Form childForm, object btnSender)
         {
             if (activeForm != null)
             { activeForm.Close(); }

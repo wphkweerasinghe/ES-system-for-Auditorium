@@ -1,6 +1,6 @@
 ﻿namespace ES_For_Auditorium.User_dashbord
 {
-    partial class EventCalender
+    partial class EventCalender_Student
     {
         /// <summary>
         /// Required designer variable.
@@ -41,14 +41,18 @@
             this.flowLayoutPanel.Name = "flowLayoutPanel";
             this.flowLayoutPanel.Size = new System.Drawing.Size(1067, 684);
             this.flowLayoutPanel.TabIndex = 0;
+            this.flowLayoutPanel.DoubleClick += new System.EventHandler(this.flowLayoutPanel_DoubleClick);
+            this.flowLayoutPanel.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.flowLayoutPanel_MouseDoubleClick);
+            this.flowLayoutPanel.MouseEnter += new System.EventHandler(this.flowLayoutPanel_MouseEnter);
+            this.flowLayoutPanel.MouseLeave += new System.EventHandler(this.flowLayoutPanel_MouseLeave);
             // 
-            // EventCalender
+            // EventCalender_Student
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 684);
             this.Controls.Add(this.flowLayoutPanel);
-            this.Name = "EventCalender";
+            this.Name = "EventCalender_Student";
             this.Text = "EventCalender";
             this.Load += new System.EventHandler(this.EventCalender_Load);
             this.ResumeLayout(false);
