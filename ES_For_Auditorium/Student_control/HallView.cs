@@ -29,22 +29,32 @@ namespace ES_For_Auditorium.Student_control
 
         private void SeatReserve(int seat_no)
         {
-            //connect 
-            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\'D:\\Lectuers\\2nd year\\2nd semester\\ES\\Final assigement\\AuditoriumReservationDB.mdf\';Integrated Security=True;Connect Timeout=30");
-            SqlCommand cmd = new SqlCommand("INSERT INTO seat_reservation (event_id, user_id, seat_no) VALUES ('"+event_id+"', '"+user_id+"', '"+seat_no+"');", con);
-            try
+            DialogResult dialogResult = MessageBox.Show("Are you want to reserve this Seat", "Buy", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
             {
-                con.Open();
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Seat Reserved successfully");
-            }catch(SqlException msg)
-            {
-                MessageBox.Show("Connection Error ! \n Please try again later");
-                Console.WriteLine(msg.Message);
+                //connect DB
+                SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\'D:\\Lectuers\\2nd year\\2nd semester\\ES\\Final assigement\\AuditoriumReservationDB.mdf\';Integrated Security=True;Connect Timeout=30");
+                SqlCommand cmd = new SqlCommand("INSERT INTO seat_reservation (event_id, user_id, seat_no) VALUES ('" + event_id + "', '" + user_id + "', '" + seat_no + "');", con);
+                try
+                {
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Seat Reserved successfully");
+                }
+                catch (SqlException msg)
+                {
+                    MessageBox.Show("Connection Error ! \n Please try again later");
+                    Console.WriteLine(msg.Message);
+                }
+                finally
+                {
+                    con.Close();
+                }
+                this.Close();
             }
-            finally
+            else if (dialogResult == DialogResult.No)
             {
-                con.Close();
+                //here
             }
         }
 

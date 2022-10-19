@@ -1,5 +1,6 @@
 ﻿using ES_For_Auditorium.Admin_control;
 using ES_For_Auditorium.Properties;
+using ES_For_Auditorium.Student_control;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -63,7 +64,10 @@ namespace ES_For_Auditorium.User_dashbord
             //create object to access values 
             EventList obj = (EventList)sender;
             event_id = int.Parse(obj.Id);
-            MessageBox.Show("you clicked " + obj.Id);
+
+            //Open Hall View form
+            HallView frm = new HallView();
+            frm.Show();
         }
 
         private void flowLayoutPanel_MouseEnter(object sender, EventArgs e)
