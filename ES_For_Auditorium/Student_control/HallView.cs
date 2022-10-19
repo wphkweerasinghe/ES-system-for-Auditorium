@@ -20,6 +20,7 @@ namespace ES_For_Auditorium.Student_control
         public HallView()
         {
             InitializeComponent();
+            DisableReservedSeat();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -27,6 +28,7 @@ namespace ES_For_Auditorium.Student_control
             SeatReserve(5);
         }
 
+        //create a fuction for reserve a seat
         private void SeatReserve(int seat_no)
         {
             DialogResult dialogResult = MessageBox.Show("Are you want to reserve this Seat", "Buy", MessageBoxButtons.YesNo);
@@ -55,6 +57,38 @@ namespace ES_For_Auditorium.Student_control
             else if (dialogResult == DialogResult.No)
             {
                 //here
+            }
+        }
+
+        //create function to disable reserved seats's button
+        private void DisableReservedSeat()
+        {
+            //get reserved seat numbers from the database
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\'D:\\Lectuers\\2nd year\\2nd semester\\ES\\Final assigement\\AuditoriumReservationDB.mdf\';Integrated Security=True;Connect Timeout=30");
+            SqlCommand cmd = new SqlCommand("SELECT seat_no FROM reservation WHERE user_id = '"+user_id+"' AND event_id = '"+event_id+"' ;", con);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            //create array to save seat numbers
+            List<int> reservedSeatNo = new List<int>();
+            //get reserved seat numbers to array
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                reservedSeatNo.Add((int)dt.Rows[i]["seat_no"]);
+            }
+            //check seats
+            foreach (int seatNo in reservedSeatNo)
+            {
+                for(int i = 0; i < reservedSeatNo.Count; i++)
+                {
+                    if(reservedSeatNo[i] == seatNo)
+                    {
+                        //set button disabled 
+                        this.Controls.Find("btn" + seatNo.ToString(), true).FirstOrDefault().Enabled = false;
+                    }
+                }
             }
         }
 
