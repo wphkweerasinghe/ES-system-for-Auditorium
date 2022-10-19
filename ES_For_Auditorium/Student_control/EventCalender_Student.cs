@@ -15,6 +15,7 @@ namespace ES_For_Auditorium.User_dashbord
 {
     public partial class EventCalender_Student : Form
     {
+        public static int event_id; 
         public EventCalender_Student()
         {
             InitializeComponent();
@@ -61,6 +62,7 @@ namespace ES_For_Auditorium.User_dashbord
         {
             //create object to access values 
             EventList obj = (EventList)sender;
+            event_id = int.Parse(obj.Id);
             MessageBox.Show("you clicked " + obj.Id);
         }
 
