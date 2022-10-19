@@ -4,7 +4,6 @@ D:\Lectuers\2nd year\2nd semester\ES\Final assigement\ES for auditorium\ES-syste
 D:\Lectuers\2nd year\2nd semester\ES\Final assigement\ES for auditorium\ES-system-for-Auditorium\ES_For_Auditorium\obj\Debug\ES_For_Auditorium.csproj.AssemblyReference.cache
 D:\Lectuers\2nd year\2nd semester\ES\Final assigement\ES for auditorium\ES-system-for-Auditorium\ES_For_Auditorium\obj\Debug\ES_For_Auditorium.csproj.SuggestedBindingRedirects.cache
 D:\Lectuers\2nd year\2nd semester\ES\Final assigement\ES for auditorium\ES-system-for-Auditorium\ES_For_Auditorium\obj\Debug\ES_For_Auditorium.Properties.Resources.resources
-D:\Lectuers\2nd year\2nd semester\ES\Final assigement\ES for auditorium\ES-system-for-Auditorium\ES_For_Auditorium\obj\Debug\ES_For_Auditorium.User_dashbord.EventCalender.resources
 D:\Lectuers\2nd year\2nd semester\ES\Final assigement\ES for auditorium\ES-system-for-Auditorium\ES_For_Auditorium\obj\Debug\ES_For_Auditorium.User_dashbord.MyReservation.resources
 D:\Lectuers\2nd year\2nd semester\ES\Final assigement\ES for auditorium\ES-system-for-Auditorium\ES_For_Auditorium\obj\Debug\ES_For_Auditorium.User_dashbord.RequestAuditorium.resources
 D:\Lectuers\2nd year\2nd semester\ES\Final assigement\ES for auditorium\ES-system-for-Auditorium\ES_For_Auditorium\obj\Debug\ES_For_Auditorium.User_dashbord.User_dashbord.resources
@@ -21,3 +20,5 @@ D:\Lectuers\2nd year\2nd semester\ES\Final assigement\ES for auditorium\ES-syste
 D:\Lectuers\2nd year\2nd semester\ES\Final assigement\ES for auditorium\ES-system-for-Auditorium\ES_For_Auditorium\obj\Debug\ES_For_Auditorium.Admin_dashbord.MyProfile_Admin.resources
 D:\Lectuers\2nd year\2nd semester\ES\Final assigement\ES for auditorium\ES-system-for-Auditorium\ES_For_Auditorium\obj\Debug\ES_For_Auditorium.User_dashbord.MyProfile_Student.resources
 D:\Lectuers\2nd year\2nd semester\ES\Final assigement\ES for auditorium\ES-system-for-Auditorium\ES_For_Auditorium\obj\Debug\ES_For_Auditorium.Admin_control.EventList.resources
+D:\Lectuers\2nd year\2nd semester\ES\Final assigement\ES for auditorium\ES-system-for-Auditorium\ES_For_Auditorium\obj\Debug\ES_For_Auditorium.User_dashbord.EventCalender_Student.resources
+D:\Lectuers\2nd year\2nd semester\ES\Final assigement\ES for auditorium\ES-system-for-Auditorium\ES_For_Auditorium\obj\Debug\ES_For_Auditorium.Student_control.HallView.resources

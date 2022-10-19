@@ -96,11 +96,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Student_control\EventCalender.cs">
+    <Compile Include="Student_control\EventCalender_Student.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Student_control\EventCalender.Designer.cs">
-      <DependentUpon>EventCalender.cs</DependentUpon>
+    <Compile Include="Student_control\EventCalender_Student.Designer.cs">
+      <DependentUpon>EventCalender_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_control\HallView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_control\HallView.Designer.cs">
+      <DependentUpon>HallView.cs</DependentUpon>
     </Compile>
     <Compile Include="Student_control\MyProfile_Student.cs">
       <SubType>Form</SubType>
@@ -160,8 +166,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Student_control\EventCalender.resx">
-      <DependentUpon>EventCalender.cs</DependentUpon>
+    <EmbeddedResource Include="Student_control\EventCalender_Student.resx">
+      <DependentUpon>EventCalender_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_control\HallView.resx">
+      <DependentUpon>HallView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Student_control\MyProfile_Student.resx">
       <DependentUpon>MyProfile_Student.cs</DependentUpon>

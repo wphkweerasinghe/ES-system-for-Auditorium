@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ES_For_Auditorium.Admin_dashbord;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,13 @@ namespace ES_For_Auditorium.Admin_control
         private String _price;
         private Image _icon;
         private Color _iconBackColor;
+        public String _id;
+
+        public String Id
+        {
+            get { return _id; }
+            set { _id = value; lblId.Text = value; }
+        }
 
         public String Title
         {
@@ -83,6 +91,14 @@ namespace ES_For_Auditorium.Admin_control
         private void EventList_MouseLeave(object sender, EventArgs e)
         {
             this.BackColor = Color.White;
+        }
+
+        private void EventList_MouseClick(object sender, MouseEventArgs e)
+        {
+            //MessageBox.Show("clicked " + Id);
+            //click function
+            
+            
         }
     }
 }

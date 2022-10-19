@@ -38,6 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.iconBackPanel = new System.Windows.Forms.Panel();
             this.panelShadow = new System.Windows.Forms.Panel();
+            this.lblId = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.eventPic)).BeginInit();
             this.iconBackPanel.SuspendLayout();
             this.SuspendLayout();
@@ -138,10 +139,21 @@
             this.panelShadow.Size = new System.Drawing.Size(769, 10);
             this.panelShadow.TabIndex = 1;
             // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblId.Location = new System.Drawing.Point(554, 117);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(0, 20);
+            this.lblId.TabIndex = 9;
+            this.lblId.Visible = false;
+            // 
             // EventList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblId);
             this.Controls.Add(this.iconBackPanel);
             this.Controls.Add(this.lblEventPrice);
             this.Controls.Add(this.label2);
@@ -153,6 +165,7 @@
             this.Name = "EventList";
             this.Size = new System.Drawing.Size(829, 173);
             this.Load += new System.EventHandler(this.EventList_Load);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.EventList_MouseClick);
             this.MouseEnter += new System.EventHandler(this.EventList_MouseEnter);
             this.MouseLeave += new System.EventHandler(this.EventList_MouseLeave);
             this.MouseHover += new System.EventHandler(this.EventList_MouseHover);
@@ -175,5 +188,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel iconBackPanel;
         private System.Windows.Forms.Panel panelShadow;
+        private System.Windows.Forms.Label lblId;
     }
 }

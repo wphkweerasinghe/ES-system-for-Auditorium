@@ -17,6 +17,7 @@ namespace ES_For_Auditorium.Login
         public Form_login()
         {
             InitializeComponent();
+            btnLogin.Enabled = false;
         }
         public static String id = "";
         public static String uname = "";
@@ -127,7 +128,7 @@ namespace ES_For_Auditorium.Login
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
         {
-
+            btnLogin.Enabled = true;
         }
     }
 }

@@ -38,7 +38,7 @@ namespace ES_For_Auditorium.User_dashbord
                 }
             }
         }
-        private void OpenChildForm(Form childForm, object btnSender)
+        public void OpenChildForm(Form childForm, object btnSender)
         {
             if (activeForm != null)
             { activeForm.Close(); }
@@ -56,7 +56,7 @@ namespace ES_For_Auditorium.User_dashbord
 
         private void btnEventCalender_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new EventCalender(), sender);
+            OpenChildForm(new EventCalender_Student(), sender);
         }
 
         private void btnReservation_Click(object sender, EventArgs e)
