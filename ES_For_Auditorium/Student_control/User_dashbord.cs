@@ -76,7 +76,9 @@ namespace ES_For_Auditorium.User_dashbord
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
+            Login.Form_login form = new Form_login();
+            form.Show();
         }
 
 

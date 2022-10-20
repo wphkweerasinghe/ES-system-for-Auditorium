@@ -36,6 +36,7 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.lblRegister = new System.Windows.Forms.Label();
             this.btnRegister = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnLogin
@@ -123,11 +124,22 @@
             this.btnRegister.UseVisualStyleBackColor = true;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(196, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(166, 39);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Welcome";
+            // 
             // Form_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(561, 364);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.lblRegister);
             this.Controls.Add(this.btnClear);
@@ -154,5 +166,6 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Label lblRegister;
         private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Label label1;
     }
 }
