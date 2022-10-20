@@ -126,11 +126,30 @@ namespace ES_For_Auditorium.Admin_dashbord
         private void btnAccept_Click(object sender, EventArgs e)
         {
             int eventId = int.Parse(txtId.Text);
+            String role = Login.Form_login.role;
+            switch (role)
+            {
+                case "Admin":
+                    AcceptRequest(eventId, "UPDATE event SET is_approved_by_admin = 1 WHERE id = '" + eventId + "' ;");
+                    break;
+
+                case "Top Manager":
+                    AcceptRequest(eventId, "UPDATE event SET is_approved_by_manager = 1 WHERE id = '" + eventId + "' ;");
+                    break;
+
+                case "MIC":
+                    AcceptRequest(eventId, "UPDATE event SET is_approved_by_mic = 1 WHERE id = '" + eventId + "' ;");
+                    break;
+            }
+
+        }
+        private void AcceptRequest(int eventId, string query)
+        {
             //DB Connection
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='D:\Lectuers\2nd year\2nd semester\ES\Final assigement\AuditoriumReservationDB.mdf';Integrated Security=True;Connect Timeout=30");
             //connect database
-            String insert = "UPDATE event SET is_approved_by_admin = 1 WHERE id = '" + eventId + "' ;";
-            SqlCommand cmd = new SqlCommand(insert, conn);
+            String update = query;
+            SqlCommand cmd = new SqlCommand(update, conn);
             try
             {
                 conn.Open();
@@ -149,7 +168,6 @@ namespace ES_For_Auditorium.Admin_dashbord
             dgvEvent.ClearSelection();
             //Refresh table
             DataShow();
-
         }
 
         private void btnReject_Click(object sender, EventArgs e)

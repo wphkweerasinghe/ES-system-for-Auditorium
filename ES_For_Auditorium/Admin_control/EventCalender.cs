@@ -52,7 +52,7 @@ namespace ES_For_Auditorium.Admin_dashbord
                 //create object
                 EventList eventList = new EventList();
 
-                eventList.Id = (string)dt.Rows[i][0];
+                eventList.Id = dt.Rows[i][0].ToString();
                 eventList.Title = dt.Rows[i][1].ToString();
                 eventList.Time = dt.Rows[i][3].ToString();
                 eventList.Date = dt.Rows[i][2].ToString();

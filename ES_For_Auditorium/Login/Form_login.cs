@@ -21,6 +21,7 @@ namespace ES_For_Auditorium.Login
         }
         public static String id = "";
         public static String uname = "";
+        public static String role = "";
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -45,7 +46,7 @@ namespace ES_For_Auditorium.Login
                     DataRow row = dt.Rows[0];
                     MessageBox.Show("Successfully loged in");
                     //get current user role
-                    String role = row["role"].ToString();
+                    role = row["role"].ToString();
                     //create varible to pass dashbord form
                     id = row["id"].ToString();
                     uname = username;
@@ -60,7 +61,7 @@ namespace ES_For_Auditorium.Login
                                 this.Hide();
                                 break;
                             }
-                        //student Admin
+                        //Admin role
                         case "Admin":
                             {
                                 Admin_dashbord.Admin_dashbord frm = new Admin_dashbord.Admin_dashbord();
@@ -68,8 +69,16 @@ namespace ES_For_Auditorium.Login
                                 this.Hide();
                                 break;
                             }
-                        //student Admin
+                        //Top Manager role
                         case "Top Manager":
+                            {
+                                Admin_dashbord.Admin_dashbord frm = new Admin_dashbord.Admin_dashbord();
+                                frm.Show();
+                                this.Hide();
+                                break;
+                            }
+                        // MIC role
+                        case "MIC":
                             {
                                 Admin_dashbord.Admin_dashbord frm = new Admin_dashbord.Admin_dashbord();
                                 frm.Show();
