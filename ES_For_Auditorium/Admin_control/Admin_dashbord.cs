@@ -70,7 +70,9 @@ namespace ES_For_Auditorium.Admin_dashbord
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
+            Login.Form_login form = new Form_login();
+            form.Show();
         }
 
         private void panelContainer_Paint(object sender, PaintEventArgs e)
