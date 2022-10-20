@@ -130,6 +130,7 @@ namespace ES_For_Auditorium.Login
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
+            //Logout from system
             Login.RegistrationForm frm = new Login.RegistrationForm();
             frm.Show();
             this.Hide();
@@ -138,6 +139,12 @@ namespace ES_For_Auditorium.Login
         private void txtPassword_TextChanged(object sender, EventArgs e)
         {
             btnLogin.Enabled = true;
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            //Exit from System
+            Application.Exit();
         }
     }
 }
