@@ -24,7 +24,7 @@ namespace ES_For_Auditorium.User_dashbord
             Console.WriteLine(user_id);
             //Show data from table
             String conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='D:\Lectuers\2nd year\2nd semester\ES\Final assigement\AuditoriumReservationDB.mdf';Integrated Security=True;Connect Timeout=30";
-            String select = "SELECT event.name, reservation.seat_no, users.name, event.time, event.date FROM reservation, event, users WHERE reservation.user_id = '"+ user_id + "'";
+            String select = "SELECT event.name, reservation.seat_no, users.name, event.time, event.date FROM reservation INNER JOIN event ON reservation.event_id = event.id INNER JOIN users ON reservation.user_id = users.id WHERE reservation.user_id = '" + user_id + "'";
 
             SqlDataAdapter adapter = new SqlDataAdapter(select, conString);
             DataSet ds = new DataSet();
