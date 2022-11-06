@@ -222,13 +222,14 @@
             this.lblName.TabIndex = 33;
             this.lblName.Text = "Name *";
             // 
-            // MyProfile
+            // MyProfile_Student
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panelContainer);
-            this.Name = "MyProfile";
+            this.Name = "MyProfile_Student";
             this.Text = "MyProfile";
             this.panelContainer.ResumeLayout(false);
             this.panelContainer.PerformLayout();

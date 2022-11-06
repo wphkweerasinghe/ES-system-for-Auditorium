@@ -20,9 +20,11 @@ namespace ES_For_Auditorium.User_dashbord
         }
         public void ShowReservations()
         {
+            int user_id = int.Parse(Login.Form_login.id);
+            Console.WriteLine(user_id);
             //Show data from table
             String conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='D:\Lectuers\2nd year\2nd semester\ES\Final assigement\AuditoriumReservationDB.mdf';Integrated Security=True;Connect Timeout=30";
-            String select = "SELECT reservation.id, event.name, reservation.seat_no FROM reservation, event WHERE reservation.event_id = event.id";
+            String select = "SELECT event.name, reservation.seat_no, users.name, event.time, event.date FROM reservation, event, users WHERE reservation.user_id = '"+ user_id + "'";
 
             SqlDataAdapter adapter = new SqlDataAdapter(select, conString);
             DataSet ds = new DataSet();

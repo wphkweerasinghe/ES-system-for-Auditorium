@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.panelRequest = new System.Windows.Forms.Panel();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.txtPrice = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtDuration = new System.Windows.Forms.TextBox();
+            this.lblDuration = new System.Windows.Forms.Label();
+            this.txtTime = new System.Windows.Forms.TextBox();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.lblDate = new System.Windows.Forms.Label();
             this.txtEventName = new System.Windows.Forms.TextBox();
             this.lblEventName = new System.Windows.Forms.Label();
-            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.txtTime = new System.Windows.Forms.TextBox();
-            this.lblTime = new System.Windows.Forms.Label();
-            this.txtDuration = new System.Windows.Forms.TextBox();
-            this.lblDuration = new System.Windows.Forms.Label();
-            this.txtPrice = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnSubmit = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
             this.panelRequest.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,6 +64,93 @@
             this.panelRequest.Size = new System.Drawing.Size(852, 462);
             this.panelRequest.TabIndex = 0;
             this.panelRequest.Paint += new System.Windows.Forms.PaintEventHandler(this.panelRequest_Paint);
+            // 
+            // btnClear
+            // 
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(212, 328);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(162, 36);
+            this.btnClear.TabIndex = 11;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.Location = new System.Drawing.Point(547, 328);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(221, 36);
+            this.btnSubmit.TabIndex = 10;
+            this.btnSubmit.Text = "Submit Request";
+            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            // 
+            // txtPrice
+            // 
+            this.txtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrice.Location = new System.Drawing.Point(173, 210);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(201, 27);
+            this.txtPrice.TabIndex = 9;
+            this.txtPrice.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(32, 217);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 20);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Ticket Price";
+            // 
+            // txtDuration
+            // 
+            this.txtDuration.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDuration.Location = new System.Drawing.Point(567, 146);
+            this.txtDuration.Name = "txtDuration";
+            this.txtDuration.Size = new System.Drawing.Size(201, 27);
+            this.txtDuration.TabIndex = 7;
+            this.txtDuration.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // lblDuration
+            // 
+            this.lblDuration.AutoSize = true;
+            this.lblDuration.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDuration.Location = new System.Drawing.Point(426, 153);
+            this.lblDuration.Name = "lblDuration";
+            this.lblDuration.Size = new System.Drawing.Size(73, 20);
+            this.lblDuration.TabIndex = 6;
+            this.lblDuration.Text = "Duration";
+            // 
+            // txtTime
+            // 
+            this.txtTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTime.Location = new System.Drawing.Point(173, 146);
+            this.txtTime.Name = "txtTime";
+            this.txtTime.Size = new System.Drawing.Size(201, 27);
+            this.txtTime.TabIndex = 5;
+            this.txtTime.TextChanged += new System.EventHandler(this.txtTime_TextChanged);
+            // 
+            // lblTime
+            // 
+            this.lblTime.AutoSize = true;
+            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.Location = new System.Drawing.Point(32, 153);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(46, 20);
+            this.lblTime.TabIndex = 4;
+            this.lblTime.Text = "Time";
+            // 
+            // dateTimePicker
+            // 
+            this.dateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker.Location = new System.Drawing.Point(568, 74);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(200, 27);
+            this.dateTimePicker.TabIndex = 3;
             // 
             // lblDate
             // 
@@ -94,97 +181,11 @@
             this.lblEventName.Text = "Event Name";
             this.lblEventName.Click += new System.EventHandler(this.label1_Click);
             // 
-            // dateTimePicker
-            // 
-            this.dateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker.Location = new System.Drawing.Point(568, 74);
-            this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(200, 27);
-            this.dateTimePicker.TabIndex = 3;
-            // 
-            // txtTime
-            // 
-            this.txtTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTime.Location = new System.Drawing.Point(173, 146);
-            this.txtTime.Name = "txtTime";
-            this.txtTime.Size = new System.Drawing.Size(201, 27);
-            this.txtTime.TabIndex = 5;
-            this.txtTime.TextChanged += new System.EventHandler(this.txtTime_TextChanged);
-            // 
-            // lblTime
-            // 
-            this.lblTime.AutoSize = true;
-            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.Location = new System.Drawing.Point(32, 153);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(46, 20);
-            this.lblTime.TabIndex = 4;
-            this.lblTime.Text = "Time";
-            // 
-            // txtDuration
-            // 
-            this.txtDuration.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDuration.Location = new System.Drawing.Point(567, 146);
-            this.txtDuration.Name = "txtDuration";
-            this.txtDuration.Size = new System.Drawing.Size(201, 27);
-            this.txtDuration.TabIndex = 7;
-            this.txtDuration.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // lblDuration
-            // 
-            this.lblDuration.AutoSize = true;
-            this.lblDuration.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDuration.Location = new System.Drawing.Point(426, 153);
-            this.lblDuration.Name = "lblDuration";
-            this.lblDuration.Size = new System.Drawing.Size(73, 20);
-            this.lblDuration.TabIndex = 6;
-            this.lblDuration.Text = "Duration";
-            // 
-            // txtPrice
-            // 
-            this.txtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrice.Location = new System.Drawing.Point(173, 210);
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(201, 27);
-            this.txtPrice.TabIndex = 9;
-            this.txtPrice.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(32, 217);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 20);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Ticket Price";
-            // 
-            // btnSubmit
-            // 
-            this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.Location = new System.Drawing.Point(547, 328);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(221, 36);
-            this.btnSubmit.TabIndex = 10;
-            this.btnSubmit.Text = "Submit Request";
-            this.btnSubmit.UseVisualStyleBackColor = true;
-            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
-            // 
-            // btnClear
-            // 
-            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(212, 328);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(162, 36);
-            this.btnClear.TabIndex = 11;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-            // 
             // RequestAuditorium
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(852, 462);
             this.Controls.Add(this.panelRequest);
             this.Name = "RequestAuditorium";
