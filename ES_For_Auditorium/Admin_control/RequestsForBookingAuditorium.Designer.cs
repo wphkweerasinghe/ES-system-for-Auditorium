@@ -244,6 +244,7 @@
             this.dgvEvent.ReadOnly = true;
             this.dgvEvent.RowHeadersWidth = 51;
             this.dgvEvent.RowTemplate.Height = 24;
+            this.dgvEvent.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvEvent.Size = new System.Drawing.Size(1193, 259);
             this.dgvEvent.TabIndex = 0;
             this.dgvEvent.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);

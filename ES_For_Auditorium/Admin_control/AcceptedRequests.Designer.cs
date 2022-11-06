@@ -40,11 +40,13 @@
             this.dgvAccepted.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvAccepted.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAccepted.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvAccepted.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvAccepted.Location = new System.Drawing.Point(0, 0);
             this.dgvAccepted.Name = "dgvAccepted";
             this.dgvAccepted.ReadOnly = true;
             this.dgvAccepted.RowHeadersWidth = 51;
             this.dgvAccepted.RowTemplate.Height = 24;
+            this.dgvAccepted.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvAccepted.Size = new System.Drawing.Size(800, 450);
             this.dgvAccepted.TabIndex = 0;
             // 
@@ -52,6 +54,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dgvAccepted);
             this.Name = "AcceptedRequests";
