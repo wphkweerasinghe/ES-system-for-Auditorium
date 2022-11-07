@@ -86,6 +86,8 @@
             // 
             // panelContainer
             // 
+            this.panelContainer.AutoScroll = true;
+            this.panelContainer.AutoSize = true;
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContainer.Location = new System.Drawing.Point(220, 80);
             this.panelContainer.Name = "panelContainer";
@@ -221,6 +223,7 @@
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

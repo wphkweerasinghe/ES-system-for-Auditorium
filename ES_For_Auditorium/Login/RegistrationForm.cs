@@ -116,5 +116,12 @@ namespace ES_For_Auditorium.Login
                 this.Close();
             }
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Form_login frm = new Form_login();
+            frm.Show();
+            this.Close();
+        }
     }
 }

@@ -34,6 +34,9 @@
             // 
             // dgvReservations
             // 
+            this.dgvReservations.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvReservations.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvReservations.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvReservations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvReservations.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvReservations.Location = new System.Drawing.Point(0, 0);

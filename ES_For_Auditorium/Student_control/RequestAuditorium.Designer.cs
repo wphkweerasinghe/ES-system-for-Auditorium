@@ -46,6 +46,8 @@
             // 
             // panelRequest
             // 
+            this.panelRequest.BackgroundImage = global::ES_For_Auditorium.Properties.Resources.istockphoto_1295114854_170667a;
+            this.panelRequest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelRequest.Controls.Add(this.btnClear);
             this.panelRequest.Controls.Add(this.btnSubmit);
             this.panelRequest.Controls.Add(this.txtPrice);

@@ -65,6 +65,8 @@
             // 
             this.panel1.AutoSize = true;
             this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel1.BackgroundImage = global::ES_For_Auditorium.Properties.Resources.istockphoto_1295114854_170667a;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.txtDate);
             this.panel1.Controls.Add(this.btnReject);
             this.panel1.Controls.Add(this.btnAccept);
@@ -81,7 +83,6 @@
             this.panel1.Controls.Add(this.txtId);
             this.panel1.Controls.Add(this.lblId);
             this.panel1.Location = new System.Drawing.Point(0, 259);
-            this.panel1.MaximumSize = new System.Drawing.Size(1920, 1080);
             this.panel1.MinimumSize = new System.Drawing.Size(1366, 768);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1366, 768);
@@ -253,6 +254,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1193, 673);
             this.Controls.Add(this.panelRequests);
             this.Name = "RequestsForBookingAuditorium";

@@ -50,6 +50,9 @@
             // 
             // panel_container
             // 
+            this.panel_container.AutoSize = true;
+            this.panel_container.BackgroundImage = global::ES_For_Auditorium.Properties.Resources.istockphoto_1295114854_170667a;
+            this.panel_container.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel_container.Controls.Add(this.btnUpdate);
             this.panel_container.Controls.Add(this.ComRole);
             this.panel_container.Controls.Add(this.btnLogout);
@@ -68,6 +71,7 @@
             this.panel_container.Controls.Add(this.lblName);
             this.panel_container.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_container.Location = new System.Drawing.Point(0, 0);
+            this.panel_container.MinimumSize = new System.Drawing.Size(845, 513);
             this.panel_container.Name = "panel_container";
             this.panel_container.Size = new System.Drawing.Size(845, 513);
             this.panel_container.TabIndex = 3;
@@ -225,15 +229,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(845, 513);
             this.Controls.Add(this.panel_container);
+            this.MinimumSize = new System.Drawing.Size(863, 560);
             this.Name = "MyProfile_Admin";
             this.Text = "MyProfile";
             this.Load += new System.EventHandler(this.MyProfile_Load);
             this.panel_container.ResumeLayout(false);
             this.panel_container.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrationForm));
             this.lblName = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -43,8 +44,11 @@
             this.lblRole = new System.Windows.Forms.Label();
             this.ComRole = new System.Windows.Forms.ComboBox();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.btnClear = new System.Windows.Forms.Button();
+            this.panelContainer = new System.Windows.Forms.Panel();
+            this.btnBack = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.panelContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblName
@@ -75,6 +79,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.SystemColors.Control;
             this.lblEmail.Location = new System.Drawing.Point(340, 80);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(49, 16);
@@ -184,36 +189,61 @@
             this.lblTitle.TabIndex = 14;
             this.lblTitle.Text = "Registration Form";
             // 
-            // btnClear
+            // panelContainer
             // 
-            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(168, 463);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(76, 28);
-            this.btnClear.TabIndex = 15;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            this.panelContainer.AutoSize = true;
+            this.panelContainer.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panelContainer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelContainer.BackgroundImage")));
+            this.panelContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelContainer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelContainer.Controls.Add(this.btnBack);
+            this.panelContainer.Controls.Add(this.btnSubmit);
+            this.panelContainer.Controls.Add(this.btnClear);
+            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContainer.Location = new System.Drawing.Point(0, 0);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(602, 553);
+            this.panelContainer.TabIndex = 17;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(37, 454);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(98, 37);
+            this.btnBack.TabIndex = 17;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnSubmit
             // 
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.Location = new System.Drawing.Point(459, 463);
+            this.btnSubmit.Location = new System.Drawing.Point(449, 454);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(91, 28);
+            this.btnSubmit.Size = new System.Drawing.Size(101, 37);
             this.btnSubmit.TabIndex = 16;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            // 
+            // btnClear
+            // 
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(246, 454);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(98, 37);
+            this.btnClear.TabIndex = 15;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // RegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(645, 532);
-            this.Controls.Add(this.btnSubmit);
-            this.Controls.Add(this.btnClear);
+            this.ClientSize = new System.Drawing.Size(602, 553);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.ComRole);
             this.Controls.Add(this.lblRole);
@@ -229,8 +259,12 @@
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblName);
+            this.Controls.Add(this.panelContainer);
+            this.MaximumSize = new System.Drawing.Size(620, 600);
+            this.MinimumSize = new System.Drawing.Size(620, 600);
             this.Name = "RegistrationForm";
             this.Text = "RegistrationForm";
+            this.panelContainer.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,5 +289,7 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Panel panelContainer;
+        private System.Windows.Forms.Button btnBack;
     }
 }

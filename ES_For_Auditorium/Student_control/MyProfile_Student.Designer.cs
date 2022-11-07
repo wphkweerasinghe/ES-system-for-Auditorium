@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyProfile_Student));
             this.panelContainer = new System.Windows.Forms.Panel();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.ComRole = new System.Windows.Forms.ComboBox();
@@ -50,6 +51,8 @@
             // 
             // panelContainer
             // 
+            this.panelContainer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelContainer.BackgroundImage")));
+            this.panelContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelContainer.Controls.Add(this.btnUpdate);
             this.panelContainer.Controls.Add(this.ComRole);
             this.panelContainer.Controls.Add(this.btnLogout);
@@ -69,14 +72,14 @@
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContainer.Location = new System.Drawing.Point(0, 0);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(800, 450);
+            this.panelContainer.Size = new System.Drawing.Size(732, 533);
             this.panelContainer.TabIndex = 2;
             this.panelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContainer_Paint);
             // 
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(567, 390);
+            this.btnUpdate.Location = new System.Drawing.Point(543, 431);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(91, 40);
             this.btnUpdate.TabIndex = 48;
@@ -93,7 +96,7 @@
             "Admin",
             "MIC",
             "Top Manager"});
-            this.ComRole.Location = new System.Drawing.Point(145, 329);
+            this.ComRole.Location = new System.Drawing.Point(121, 370);
             this.ComRole.Name = "ComRole";
             this.ComRole.Size = new System.Drawing.Size(207, 28);
             this.ComRole.TabIndex = 46;
@@ -101,7 +104,7 @@
             // btnLogout
             // 
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.Location = new System.Drawing.Point(237, 390);
+            this.btnLogout.Location = new System.Drawing.Point(213, 431);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(115, 40);
             this.btnLogout.TabIndex = 47;
@@ -112,7 +115,7 @@
             // lblRole
             // 
             this.lblRole.AutoSize = true;
-            this.lblRole.Location = new System.Drawing.Point(142, 289);
+            this.lblRole.Location = new System.Drawing.Point(118, 330);
             this.lblRole.Name = "lblRole";
             this.lblRole.Size = new System.Drawing.Size(76, 16);
             this.lblRole.TabIndex = 45;
@@ -121,7 +124,7 @@
             // txtConfirmPass
             // 
             this.txtConfirmPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmPass.Location = new System.Drawing.Point(451, 225);
+            this.txtConfirmPass.Location = new System.Drawing.Point(427, 266);
             this.txtConfirmPass.Name = "txtConfirmPass";
             this.txtConfirmPass.Size = new System.Drawing.Size(207, 27);
             this.txtConfirmPass.TabIndex = 44;
@@ -130,7 +133,7 @@
             // lblConfirmPass
             // 
             this.lblConfirmPass.AutoSize = true;
-            this.lblConfirmPass.Location = new System.Drawing.Point(448, 196);
+            this.lblConfirmPass.Location = new System.Drawing.Point(424, 237);
             this.lblConfirmPass.Name = "lblConfirmPass";
             this.lblConfirmPass.Size = new System.Drawing.Size(123, 16);
             this.lblConfirmPass.TabIndex = 43;
@@ -139,7 +142,7 @@
             // txtCreatePass
             // 
             this.txtCreatePass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCreatePass.Location = new System.Drawing.Point(145, 225);
+            this.txtCreatePass.Location = new System.Drawing.Point(121, 266);
             this.txtCreatePass.Name = "txtCreatePass";
             this.txtCreatePass.Size = new System.Drawing.Size(207, 27);
             this.txtCreatePass.TabIndex = 42;
@@ -148,7 +151,7 @@
             // lblCreatePassword
             // 
             this.lblCreatePassword.AutoSize = true;
-            this.lblCreatePassword.Location = new System.Drawing.Point(142, 196);
+            this.lblCreatePassword.Location = new System.Drawing.Point(118, 237);
             this.lblCreatePassword.Name = "lblCreatePassword";
             this.lblCreatePassword.Size = new System.Drawing.Size(118, 16);
             this.lblCreatePassword.TabIndex = 41;
@@ -157,7 +160,7 @@
             // txtUsername
             // 
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(451, 139);
+            this.txtUsername.Location = new System.Drawing.Point(427, 180);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(207, 27);
             this.txtUsername.TabIndex = 40;
@@ -165,7 +168,7 @@
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(448, 110);
+            this.lblUsername.Location = new System.Drawing.Point(424, 151);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(78, 16);
             this.lblUsername.TabIndex = 39;
@@ -174,7 +177,7 @@
             // txtStudentId
             // 
             this.txtStudentId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStudentId.Location = new System.Drawing.Point(145, 139);
+            this.txtStudentId.Location = new System.Drawing.Point(121, 180);
             this.txtStudentId.Name = "txtStudentId";
             this.txtStudentId.Size = new System.Drawing.Size(207, 27);
             this.txtStudentId.TabIndex = 38;
@@ -182,7 +185,7 @@
             // lblStudentId
             // 
             this.lblStudentId.AutoSize = true;
-            this.lblStudentId.Location = new System.Drawing.Point(142, 110);
+            this.lblStudentId.Location = new System.Drawing.Point(118, 151);
             this.lblStudentId.Name = "lblStudentId";
             this.lblStudentId.Size = new System.Drawing.Size(68, 16);
             this.lblStudentId.TabIndex = 37;
@@ -191,7 +194,7 @@
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(451, 49);
+            this.txtEmail.Location = new System.Drawing.Point(427, 90);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(207, 27);
             this.txtEmail.TabIndex = 36;
@@ -199,7 +202,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(448, 20);
+            this.lblEmail.Location = new System.Drawing.Point(424, 61);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(49, 16);
             this.lblEmail.TabIndex = 35;
@@ -208,7 +211,7 @@
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(145, 49);
+            this.txtName.Location = new System.Drawing.Point(121, 90);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(207, 27);
             this.txtName.TabIndex = 34;
@@ -216,7 +219,7 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(142, 20);
+            this.lblName.Location = new System.Drawing.Point(118, 61);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(52, 16);
             this.lblName.TabIndex = 33;
@@ -226,9 +229,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(732, 533);
             this.Controls.Add(this.panelContainer);
+            this.MinimumSize = new System.Drawing.Size(750, 580);
             this.Name = "MyProfile_Student";
             this.Text = "MyProfile";
             this.panelContainer.ResumeLayout(false);

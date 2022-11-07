@@ -87,6 +87,7 @@ namespace ES_For_Auditorium.Student_control
                     {
                         //set button disabled 
                         this.Controls.Find("btn" + seatNo.ToString(), true).FirstOrDefault().Enabled = false;
+                        this.Controls.Find("btn" + seatNo.ToString(), true).FirstOrDefault().BackColor = Color.Silver;
                     }
                 }
             }
