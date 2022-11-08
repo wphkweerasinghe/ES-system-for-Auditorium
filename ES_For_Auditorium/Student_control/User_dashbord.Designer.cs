@@ -54,7 +54,7 @@
             panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
             panelTitle.Location = new System.Drawing.Point(220, 0);
             panelTitle.Name = "panelTitle";
-            panelTitle.Size = new System.Drawing.Size(713, 80);
+            panelTitle.Size = new System.Drawing.Size(1680, 80);
             panelTitle.TabIndex = 1;
             // 
             // lblUsername
@@ -63,7 +63,7 @@
             this.lblUsername.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(589, 0);
+            this.lblUsername.Location = new System.Drawing.Point(1556, 0);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
             this.lblUsername.Size = new System.Drawing.Size(124, 49);
@@ -76,7 +76,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(271, 25);
+            this.lblTitle.Location = new System.Drawing.Point(755, 25);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(210, 32);
             this.lblTitle.TabIndex = 0;
@@ -94,7 +94,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 525);
+            this.panelMenu.Size = new System.Drawing.Size(220, 1031);
             this.panelMenu.TabIndex = 0;
             // 
             // btnLogout
@@ -200,7 +200,7 @@
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContainer.Location = new System.Drawing.Point(220, 80);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(713, 445);
+            this.panelContainer.Size = new System.Drawing.Size(1680, 951);
             this.panelContainer.TabIndex = 2;
             this.panelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContainer_Paint);
             // 
@@ -209,10 +209,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(933, 525);
+            this.ClientSize = new System.Drawing.Size(1900, 1031);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(panelTitle);
             this.Controls.Add(this.panelMenu);
+            this.MinimumSize = new System.Drawing.Size(1918, 1078);
             this.Name = "User_dashbord";
             this.Text = "User_dashbord";
             panelTitle.ResumeLayout(false);

@@ -78,6 +78,7 @@
             // 
             // btnUpdate
             // 
+            this.btnUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.Location = new System.Drawing.Point(592, 402);
             this.btnUpdate.Name = "btnUpdate";
@@ -89,6 +90,7 @@
             // 
             // ComRole
             // 
+            this.ComRole.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ComRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComRole.FormattingEnabled = true;
             this.ComRole.Items.AddRange(new object[] {
@@ -103,6 +105,7 @@
             // 
             // btnLogout
             // 
+            this.btnLogout.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.Location = new System.Drawing.Point(262, 402);
             this.btnLogout.Name = "btnLogout";
@@ -114,6 +117,7 @@
             // 
             // lblRole
             // 
+            this.lblRole.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblRole.AutoSize = true;
             this.lblRole.Location = new System.Drawing.Point(167, 301);
             this.lblRole.Name = "lblRole";
@@ -123,6 +127,7 @@
             // 
             // txtConfirmPass
             // 
+            this.txtConfirmPass.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtConfirmPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmPass.Location = new System.Drawing.Point(476, 237);
             this.txtConfirmPass.Name = "txtConfirmPass";
@@ -132,6 +137,7 @@
             // 
             // lblConfirmPass
             // 
+            this.lblConfirmPass.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblConfirmPass.AutoSize = true;
             this.lblConfirmPass.Location = new System.Drawing.Point(473, 208);
             this.lblConfirmPass.Name = "lblConfirmPass";
@@ -141,6 +147,7 @@
             // 
             // txtCreatePass
             // 
+            this.txtCreatePass.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtCreatePass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCreatePass.Location = new System.Drawing.Point(170, 237);
             this.txtCreatePass.Name = "txtCreatePass";
@@ -150,6 +157,7 @@
             // 
             // lblCreatePassword
             // 
+            this.lblCreatePassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCreatePassword.AutoSize = true;
             this.lblCreatePassword.Location = new System.Drawing.Point(167, 208);
             this.lblCreatePassword.Name = "lblCreatePassword";
@@ -159,6 +167,7 @@
             // 
             // txtUsername
             // 
+            this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.Location = new System.Drawing.Point(476, 151);
             this.txtUsername.Name = "txtUsername";
@@ -167,6 +176,7 @@
             // 
             // lblUsername
             // 
+            this.lblUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblUsername.AutoSize = true;
             this.lblUsername.Location = new System.Drawing.Point(473, 122);
             this.lblUsername.Name = "lblUsername";
@@ -176,6 +186,7 @@
             // 
             // txtStudentId
             // 
+            this.txtStudentId.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtStudentId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStudentId.Location = new System.Drawing.Point(170, 151);
             this.txtStudentId.Name = "txtStudentId";
@@ -184,6 +195,7 @@
             // 
             // lblStudentId
             // 
+            this.lblStudentId.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblStudentId.AutoSize = true;
             this.lblStudentId.Location = new System.Drawing.Point(167, 122);
             this.lblStudentId.Name = "lblStudentId";
@@ -193,6 +205,7 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(476, 61);
             this.txtEmail.Name = "txtEmail";
@@ -201,6 +214,7 @@
             // 
             // lblEmail
             // 
+            this.lblEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblEmail.AutoSize = true;
             this.lblEmail.Location = new System.Drawing.Point(473, 32);
             this.lblEmail.Name = "lblEmail";
@@ -210,6 +224,7 @@
             // 
             // txtName
             // 
+            this.txtName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Location = new System.Drawing.Point(170, 61);
             this.txtName.Name = "txtName";
@@ -218,6 +233,7 @@
             // 
             // lblName
             // 
+            this.lblName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblName.AutoSize = true;
             this.lblName.Location = new System.Drawing.Point(167, 32);
             this.lblName.Name = "lblName";

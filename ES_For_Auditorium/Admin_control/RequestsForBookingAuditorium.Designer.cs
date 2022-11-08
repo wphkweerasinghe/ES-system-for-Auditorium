@@ -82,6 +82,7 @@
             this.panel1.Controls.Add(this.lblEname);
             this.panel1.Controls.Add(this.txtId);
             this.panel1.Controls.Add(this.lblId);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 259);
             this.panel1.MinimumSize = new System.Drawing.Size(1366, 768);
             this.panel1.Name = "panel1";
@@ -91,6 +92,7 @@
             // 
             // txtDate
             // 
+            this.txtDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDate.Location = new System.Drawing.Point(591, 60);
             this.txtDate.Name = "txtDate";
@@ -99,6 +101,7 @@
             // 
             // btnReject
             // 
+            this.btnReject.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnReject.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReject.Location = new System.Drawing.Point(579, 242);
             this.btnReject.Name = "btnReject";
@@ -110,6 +113,7 @@
             // 
             // btnAccept
             // 
+            this.btnAccept.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAccept.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccept.Location = new System.Drawing.Point(872, 242);
             this.btnAccept.Name = "btnAccept";
@@ -121,6 +125,7 @@
             // 
             // btnEdit
             // 
+            this.btnEdit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.Location = new System.Drawing.Point(872, 137);
             this.btnEdit.Name = "btnEdit";
@@ -132,6 +137,7 @@
             // 
             // txtPrice
             // 
+            this.txtPrice.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrice.Location = new System.Drawing.Point(591, 131);
             this.txtPrice.Name = "txtPrice";
@@ -140,6 +146,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(462, 131);
@@ -150,6 +157,7 @@
             // 
             // lblDate
             // 
+            this.lblDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDate.Location = new System.Drawing.Point(462, 67);
@@ -160,6 +168,7 @@
             // 
             // txtDuration
             // 
+            this.txtDuration.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtDuration.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDuration.Location = new System.Drawing.Point(184, 301);
             this.txtDuration.Name = "txtDuration";
@@ -168,6 +177,7 @@
             // 
             // lblDuration
             // 
+            this.lblDuration.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblDuration.AutoSize = true;
             this.lblDuration.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDuration.Location = new System.Drawing.Point(55, 301);
@@ -178,6 +188,7 @@
             // 
             // txtTime
             // 
+            this.txtTime.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTime.Location = new System.Drawing.Point(184, 229);
             this.txtTime.Name = "txtTime";
@@ -186,6 +197,7 @@
             // 
             // lblTime
             // 
+            this.lblTime.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTime.AutoSize = true;
             this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTime.Location = new System.Drawing.Point(55, 229);
@@ -196,6 +208,7 @@
             // 
             // txtName
             // 
+            this.txtName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Location = new System.Drawing.Point(184, 149);
             this.txtName.Name = "txtName";
@@ -204,6 +217,7 @@
             // 
             // lblEname
             // 
+            this.lblEname.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblEname.AutoSize = true;
             this.lblEname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEname.Location = new System.Drawing.Point(55, 149);
@@ -214,6 +228,7 @@
             // 
             // txtId
             // 
+            this.txtId.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.Location = new System.Drawing.Point(184, 64);
             this.txtId.Name = "txtId";
@@ -223,6 +238,7 @@
             // 
             // lblId
             // 
+            this.lblId.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblId.AutoSize = true;
             this.lblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblId.Location = new System.Drawing.Point(55, 64);
@@ -236,7 +252,7 @@
             this.dgvEvent.AllowUserToAddRows = false;
             this.dgvEvent.AllowUserToDeleteRows = false;
             this.dgvEvent.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvEvent.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
+            this.dgvEvent.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvEvent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEvent.Dock = System.Windows.Forms.DockStyle.Top;
             this.dgvEvent.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
