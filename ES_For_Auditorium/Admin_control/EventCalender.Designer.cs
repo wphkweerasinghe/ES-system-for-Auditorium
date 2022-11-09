@@ -67,7 +67,7 @@
             this.Controls.Add(this.panelEventList);
             this.MinimumSize = new System.Drawing.Size(1120, 700);
             this.Name = "EventCalender";
-            this.Text = "EventCalender";
+            this.Text = "Event Calender";
             this.Load += new System.EventHandler(this.EventCalender_Load);
             this.panelEventList.ResumeLayout(false);
             this.panelEventList.PerformLayout();

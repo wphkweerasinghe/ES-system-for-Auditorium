@@ -59,7 +59,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dgvAccepted);
             this.Name = "AcceptedRequests";
-            this.Text = "AcceptedRequests";
+            this.Text = "Accepted Requests";
             this.Load += new System.EventHandler(this.AcceptedRequests_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAccepted)).EndInit();
             this.ResumeLayout(false);

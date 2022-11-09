@@ -55,7 +55,7 @@
             this.ClientSize = new System.Drawing.Size(1067, 684);
             this.Controls.Add(this.flowLayoutPanel);
             this.Name = "EventCalender_Student";
-            this.Text = "EventCalender";
+            this.Text = "Event Calender";
             this.Load += new System.EventHandler(this.EventCalender_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

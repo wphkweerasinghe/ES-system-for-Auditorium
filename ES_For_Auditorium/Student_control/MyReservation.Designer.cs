@@ -180,7 +180,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvReservations);
             this.Name = "MyReservation";
-            this.Text = "MyReservation";
+            this.Text = "My Reservation";
             ((System.ComponentModel.ISupportInitialize)(this.dgvReservations)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQR)).EndInit();
             this.ResumeLayout(false);

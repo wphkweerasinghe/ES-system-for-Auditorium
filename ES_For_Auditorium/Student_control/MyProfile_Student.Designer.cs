@@ -251,7 +251,7 @@
             this.Controls.Add(this.panelContainer);
             this.MinimumSize = new System.Drawing.Size(750, 580);
             this.Name = "MyProfile_Student";
-            this.Text = "MyProfile";
+            this.Text = "My Profile";
             this.panelContainer.ResumeLayout(false);
             this.panelContainer.PerformLayout();
             this.ResumeLayout(false);

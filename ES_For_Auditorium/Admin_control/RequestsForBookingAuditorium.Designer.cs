@@ -275,7 +275,7 @@
             this.ClientSize = new System.Drawing.Size(1193, 673);
             this.Controls.Add(this.panelRequests);
             this.Name = "RequestsForBookingAuditorium";
-            this.Text = "RequestsForBookingAuditorium";
+            this.Text = "Requests For Booking Auditorium";
             this.panelRequests.ResumeLayout(false);
             this.panelRequests.PerformLayout();
             this.panel1.ResumeLayout(false);

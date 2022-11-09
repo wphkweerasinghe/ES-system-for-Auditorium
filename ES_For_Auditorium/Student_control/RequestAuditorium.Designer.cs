@@ -203,7 +203,7 @@
             this.ClientSize = new System.Drawing.Size(852, 462);
             this.Controls.Add(this.panelRequest);
             this.Name = "RequestAuditorium";
-            this.Text = "RequestAuditorium";
+            this.Text = "Request Auditorium";
             this.panelRequest.ResumeLayout(false);
             this.panelRequest.PerformLayout();
             this.ResumeLayout(false);
