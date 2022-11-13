@@ -146,5 +146,20 @@ namespace ES_For_Auditorium.Login
             //Exit from System
             Application.Exit();
         }
+
+        private void panelIcon_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblPassword_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelcontainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

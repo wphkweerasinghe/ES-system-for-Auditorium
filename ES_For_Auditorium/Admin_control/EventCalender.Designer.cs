@@ -50,7 +50,6 @@
             // 
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.AutoSize = true;
-            this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -68,7 +67,7 @@
             this.Controls.Add(this.panelEventList);
             this.MinimumSize = new System.Drawing.Size(1120, 700);
             this.Name = "EventCalender";
-            this.Text = "EventCalender";
+            this.Text = "Event Calender";
             this.Load += new System.EventHandler(this.EventCalender_Load);
             this.panelEventList.ResumeLayout(false);
             this.panelEventList.PerformLayout();

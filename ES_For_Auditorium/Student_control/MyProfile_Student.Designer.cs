@@ -45,11 +45,16 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
+            this.pictureBoxProfile = new System.Windows.Forms.PictureBox();
             this.panelContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfile)).BeginInit();
             this.SuspendLayout();
             // 
             // panelContainer
             // 
+            this.panelContainer.BackgroundImage = global::ES_For_Auditorium.Properties.Resources.istockphoto_1295114854_170667a;
+            this.panelContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelContainer.Controls.Add(this.pictureBoxProfile);
             this.panelContainer.Controls.Add(this.btnUpdate);
             this.panelContainer.Controls.Add(this.ComRole);
             this.panelContainer.Controls.Add(this.btnLogout);
@@ -69,14 +74,15 @@
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContainer.Location = new System.Drawing.Point(0, 0);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(800, 450);
+            this.panelContainer.Size = new System.Drawing.Size(881, 740);
             this.panelContainer.TabIndex = 2;
             this.panelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContainer_Paint);
             // 
             // btnUpdate
             // 
+            this.btnUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(567, 390);
+            this.btnUpdate.Location = new System.Drawing.Point(620, 622);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(91, 40);
             this.btnUpdate.TabIndex = 48;
@@ -86,6 +92,7 @@
             // 
             // ComRole
             // 
+            this.ComRole.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ComRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComRole.FormattingEnabled = true;
             this.ComRole.Items.AddRange(new object[] {
@@ -93,15 +100,16 @@
             "Admin",
             "MIC",
             "Top Manager"});
-            this.ComRole.Location = new System.Drawing.Point(145, 329);
+            this.ComRole.Location = new System.Drawing.Point(198, 561);
             this.ComRole.Name = "ComRole";
             this.ComRole.Size = new System.Drawing.Size(207, 28);
             this.ComRole.TabIndex = 46;
             // 
             // btnLogout
             // 
+            this.btnLogout.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.Location = new System.Drawing.Point(237, 390);
+            this.btnLogout.Location = new System.Drawing.Point(290, 622);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(115, 40);
             this.btnLogout.TabIndex = 47;
@@ -111,8 +119,9 @@
             // 
             // lblRole
             // 
+            this.lblRole.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblRole.AutoSize = true;
-            this.lblRole.Location = new System.Drawing.Point(142, 289);
+            this.lblRole.Location = new System.Drawing.Point(195, 521);
             this.lblRole.Name = "lblRole";
             this.lblRole.Size = new System.Drawing.Size(76, 16);
             this.lblRole.TabIndex = 45;
@@ -120,8 +129,9 @@
             // 
             // txtConfirmPass
             // 
+            this.txtConfirmPass.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtConfirmPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmPass.Location = new System.Drawing.Point(451, 225);
+            this.txtConfirmPass.Location = new System.Drawing.Point(504, 457);
             this.txtConfirmPass.Name = "txtConfirmPass";
             this.txtConfirmPass.Size = new System.Drawing.Size(207, 27);
             this.txtConfirmPass.TabIndex = 44;
@@ -129,8 +139,9 @@
             // 
             // lblConfirmPass
             // 
+            this.lblConfirmPass.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblConfirmPass.AutoSize = true;
-            this.lblConfirmPass.Location = new System.Drawing.Point(448, 196);
+            this.lblConfirmPass.Location = new System.Drawing.Point(501, 428);
             this.lblConfirmPass.Name = "lblConfirmPass";
             this.lblConfirmPass.Size = new System.Drawing.Size(123, 16);
             this.lblConfirmPass.TabIndex = 43;
@@ -138,8 +149,9 @@
             // 
             // txtCreatePass
             // 
+            this.txtCreatePass.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtCreatePass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCreatePass.Location = new System.Drawing.Point(145, 225);
+            this.txtCreatePass.Location = new System.Drawing.Point(198, 457);
             this.txtCreatePass.Name = "txtCreatePass";
             this.txtCreatePass.Size = new System.Drawing.Size(207, 27);
             this.txtCreatePass.TabIndex = 42;
@@ -147,8 +159,9 @@
             // 
             // lblCreatePassword
             // 
+            this.lblCreatePassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCreatePassword.AutoSize = true;
-            this.lblCreatePassword.Location = new System.Drawing.Point(142, 196);
+            this.lblCreatePassword.Location = new System.Drawing.Point(195, 428);
             this.lblCreatePassword.Name = "lblCreatePassword";
             this.lblCreatePassword.Size = new System.Drawing.Size(118, 16);
             this.lblCreatePassword.TabIndex = 41;
@@ -156,16 +169,18 @@
             // 
             // txtUsername
             // 
+            this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(451, 139);
+            this.txtUsername.Location = new System.Drawing.Point(504, 371);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(207, 27);
             this.txtUsername.TabIndex = 40;
             // 
             // lblUsername
             // 
+            this.lblUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(448, 110);
+            this.lblUsername.Location = new System.Drawing.Point(501, 342);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(78, 16);
             this.lblUsername.TabIndex = 39;
@@ -173,16 +188,18 @@
             // 
             // txtStudentId
             // 
+            this.txtStudentId.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtStudentId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStudentId.Location = new System.Drawing.Point(145, 139);
+            this.txtStudentId.Location = new System.Drawing.Point(198, 371);
             this.txtStudentId.Name = "txtStudentId";
             this.txtStudentId.Size = new System.Drawing.Size(207, 27);
             this.txtStudentId.TabIndex = 38;
             // 
             // lblStudentId
             // 
+            this.lblStudentId.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblStudentId.AutoSize = true;
-            this.lblStudentId.Location = new System.Drawing.Point(142, 110);
+            this.lblStudentId.Location = new System.Drawing.Point(195, 342);
             this.lblStudentId.Name = "lblStudentId";
             this.lblStudentId.Size = new System.Drawing.Size(68, 16);
             this.lblStudentId.TabIndex = 37;
@@ -190,16 +207,18 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(451, 49);
+            this.txtEmail.Location = new System.Drawing.Point(504, 281);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(207, 27);
             this.txtEmail.TabIndex = 36;
             // 
             // lblEmail
             // 
+            this.lblEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(448, 20);
+            this.lblEmail.Location = new System.Drawing.Point(501, 252);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(49, 16);
             this.lblEmail.TabIndex = 35;
@@ -207,32 +226,48 @@
             // 
             // txtName
             // 
+            this.txtName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(145, 49);
+            this.txtName.Location = new System.Drawing.Point(198, 281);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(207, 27);
             this.txtName.TabIndex = 34;
             // 
             // lblName
             // 
+            this.lblName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(142, 20);
+            this.lblName.Location = new System.Drawing.Point(195, 252);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(52, 16);
             this.lblName.TabIndex = 33;
             this.lblName.Text = "Name *";
             // 
+            // pictureBoxProfile
+            // 
+            this.pictureBoxProfile.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxProfile.BackgroundImage = global::ES_For_Auditorium.Properties.Resources.user_icon;
+            this.pictureBoxProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxProfile.Location = new System.Drawing.Point(369, 50);
+            this.pictureBoxProfile.Name = "pictureBoxProfile";
+            this.pictureBoxProfile.Size = new System.Drawing.Size(150, 150);
+            this.pictureBoxProfile.TabIndex = 49;
+            this.pictureBoxProfile.TabStop = false;
+            // 
             // MyProfile_Student
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(881, 740);
             this.Controls.Add(this.panelContainer);
+            this.MinimumSize = new System.Drawing.Size(750, 580);
             this.Name = "MyProfile_Student";
-            this.Text = "MyProfile";
+            this.Text = "My Profile";
             this.panelContainer.ResumeLayout(false);
             this.panelContainer.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfile)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -256,5 +291,6 @@
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.PictureBox pictureBoxProfile;
     }
 }

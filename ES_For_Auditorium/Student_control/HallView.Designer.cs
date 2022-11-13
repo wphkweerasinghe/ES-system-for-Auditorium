@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.panelContanier = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.btnNotAvaliable = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.btnAvalable = new System.Windows.Forms.Button();
             this.btn30 = new System.Windows.Forms.Button();
             this.btn29 = new System.Windows.Forms.Button();
             this.btn28 = new System.Windows.Forms.Button();
@@ -77,6 +81,12 @@
             // 
             // panelContanier
             // 
+            this.panelContanier.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panelContanier.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelContanier.Controls.Add(this.label14);
+            this.panelContanier.Controls.Add(this.btnNotAvaliable);
+            this.panelContanier.Controls.Add(this.label13);
+            this.panelContanier.Controls.Add(this.btnAvalable);
             this.panelContanier.Controls.Add(this.btn30);
             this.panelContanier.Controls.Add(this.btn29);
             this.panelContanier.Controls.Add(this.btn28);
@@ -125,6 +135,43 @@
             this.panelContanier.Name = "panelContanier";
             this.panelContanier.Size = new System.Drawing.Size(1182, 503);
             this.panelContanier.TabIndex = 0;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(663, 457);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(140, 25);
+            this.label14.TabIndex = 46;
+            this.label14.Text = "Not Avaliable";
+            // 
+            // btnNotAvaliable
+            // 
+            this.btnNotAvaliable.BackColor = System.Drawing.Color.Silver;
+            this.btnNotAvaliable.Location = new System.Drawing.Point(606, 447);
+            this.btnNotAvaliable.Name = "btnNotAvaliable";
+            this.btnNotAvaliable.Size = new System.Drawing.Size(35, 35);
+            this.btnNotAvaliable.TabIndex = 45;
+            this.btnNotAvaliable.UseVisualStyleBackColor = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(448, 457);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(101, 25);
+            this.label13.TabIndex = 44;
+            this.label13.Text = "Avaliable";
+            // 
+            // btnAvalable
+            // 
+            this.btnAvalable.Location = new System.Drawing.Point(391, 447);
+            this.btnAvalable.Name = "btnAvalable";
+            this.btnAvalable.Size = new System.Drawing.Size(35, 35);
+            this.btnAvalable.TabIndex = 43;
+            this.btnAvalable.UseVisualStyleBackColor = true;
             // 
             // btn30
             // 
@@ -535,7 +582,7 @@
             this.Controls.Add(this.panelContanier);
             this.MinimumSize = new System.Drawing.Size(1200, 550);
             this.Name = "HallView";
-            this.Text = "HallView";
+            this.Text = "Hall View";
             this.panelContanier.ResumeLayout(false);
             this.panelContanier.PerformLayout();
             this.ResumeLayout(false);
@@ -588,5 +635,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button btnNotAvaliable;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button btnAvalable;
     }
 }
