@@ -113,6 +113,16 @@ namespace ES_For_Auditorium.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap main_image_auditorium {
+            get {
+                object obj = ResourceManager.GetObject("main_image_auditorium", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap nsbm_logo_favicon {
             get {
                 object obj = ResourceManager.GetObject("nsbm_logo_favicon", resourceCulture);

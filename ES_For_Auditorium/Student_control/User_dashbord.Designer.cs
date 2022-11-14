@@ -197,6 +197,7 @@
             // 
             this.panelContainer.AutoScroll = true;
             this.panelContainer.AutoSize = true;
+            this.panelContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContainer.Location = new System.Drawing.Point(220, 80);
             this.panelContainer.Name = "panelContainer";

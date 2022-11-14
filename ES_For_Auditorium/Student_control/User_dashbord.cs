@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -25,7 +26,7 @@ namespace ES_For_Auditorium.User_dashbord
 
         private void panelContainer_Paint(object sender, PaintEventArgs e)
         {
-
+            
         }
         private void ActivateButton(Object btnSender)
         {

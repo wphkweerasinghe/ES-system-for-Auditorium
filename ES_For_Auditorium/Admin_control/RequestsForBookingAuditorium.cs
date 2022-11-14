@@ -20,7 +20,7 @@ namespace ES_For_Auditorium.Admin_dashbord
         {
             //Show data from table
             String conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='D:\Lectuers\2nd year\2nd semester\ES\Final assigement\AuditoriumReservationDB.mdf';Integrated Security=True;Connect Timeout=30";
-            String select = "SELECT event.name, event.date, event.time, event.duration, event.is_approved_by_admin, event.is_approved_by_mic, event.is_approved_by_manager, event.price, users.username FROM event INNER JOIN users ON event.user_id = users.id ;";
+            String select = "SELECT event.id, event.name, event.date, event.time, event.duration, event.is_approved_by_admin, event.is_approved_by_mic, event.is_approved_by_manager, event.price, users.username FROM event INNER JOIN users ON event.user_id = users.id;";
 
             SqlDataAdapter adapter = new SqlDataAdapter(select, conString);
             DataSet ds = new DataSet();

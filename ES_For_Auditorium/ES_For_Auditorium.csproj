@@ -237,5 +237,8 @@
   <ItemGroup>
     <None Include="Resources\registration.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\main-image-auditorium.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
